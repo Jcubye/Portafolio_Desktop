@@ -55,10 +55,10 @@ namespace CapaGUI
             this.dataGridView1.Columns["rut"].Visible = false;
 
             //cargar combobox en datagridview para estados
-            string[] estados = new string[] { "Activo", "Inactivo", "Suspendido" };
-            DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
-            cmb.DataSource = estados;
-            this.dataGridView1.Columns.Add(cmb); //agrega una nueva columna, se debe reemplazar el textbox por combobox (preguntar a profe)
+            //string[] estados = new string[] { "Activo", "Inactivo", "Suspendido" };
+            //DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
+            //cmb.DataSource = estados;
+            //this.dataGridView1.Columns.Add(cmb); //agrega una nueva columna, se debe reemplazar el textbox por combobox (preguntar a profe)
 
             try
             {
@@ -80,15 +80,20 @@ namespace CapaGUI
                         auxCliente.Telefono = (int)row.Cells[4].Value;
                         auxCliente.RazonSocial = (String)row.Cells[5].Value;
                         auxCliente.Estado = (String)row.Cells[6].Value;
+                        if (auxCliente.Estado == "Activo" || auxCliente.Estado == "Inactivo" || auxCliente.Estado == "Suspendido"){
+                            auxNegocio.actualizarCliente(auxCliente);
 
-                        auxNegocio.actualizarCliente(auxCliente);
-
-                        MessageBox.Show("Cliente actualizado ", "Sistema");
-                        this.dataGridView1.Columns["rut"].Visible = true;
-                        this.dataGridView1.ReadOnly = true;
-                        this.btnActualizar.Text = "Actualizar";
-                        this.btnSalir.Text = "Salir";
-                        this.btnListar.Enabled = true;
+                            MessageBox.Show("Cliente actualizado ", "Sistema");
+                            this.dataGridView1.Columns["rut"].Visible = true;
+                            this.dataGridView1.ReadOnly = true;
+                            this.btnActualizar.Text = "Actualizar";
+                            this.btnSalir.Text = "Salir";
+                            this.btnListar.Enabled = true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("El estado puede ser Activo, Inactivo o Suspendido | Respete mayuscula inicial");
+                        }
                     }
                     else
                     {
