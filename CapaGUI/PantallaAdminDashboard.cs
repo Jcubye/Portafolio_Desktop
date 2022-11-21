@@ -43,5 +43,12 @@ namespace CapaGUI
             MantenedorClientes mc = new MantenedorClientes();
             mc.ShowDialog();
         }
+
+        private void asToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MantenedorAdministradores pAdminDash = new MantenedorAdministradores();
+            pAdminDash.ShowDialog();
+        }
     }
 }

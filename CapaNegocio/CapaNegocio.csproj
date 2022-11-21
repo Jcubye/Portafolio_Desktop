@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Envio_correo.cs" />
+    <Compile Include="NegocioUsuario.cs" />
+    <Compile Include="NegocioAdministrador.cs" />
     <Compile Include="NegocioCliente.cs" />
     <Compile Include="NegocioRegionComuna.cs" />
     <Compile Include="NegocioRubro.cs" />
