@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaConexión</RootNamespace>
     <AssemblyName>CapaConexión</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,24 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prueba_portafolioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prueba_portafolioDataSet.xsc">
+      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="prueba_portafolioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prueba_portafolioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prueba_portafolioDataSet.xss">
+      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

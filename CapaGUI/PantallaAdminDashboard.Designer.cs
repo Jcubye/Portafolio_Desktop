@@ -40,6 +40,7 @@ namespace CapaGUI
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorProgesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,8 +58,8 @@ namespace CapaGUI
             this.salirToolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(586, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(781, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,14 +68,14 @@ namespace CapaGUI
             this.perfilToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.notificacionesToolStripMenuItem});
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.perfilToolStripMenuItem.Text = "Dashboard";
             this.perfilToolStripMenuItem.Click += new System.EventHandler(this.perfilToolStripMenuItem_Click);
             // 
             // notificacionesToolStripMenuItem
             // 
             this.notificacionesToolStripMenuItem.Name = "notificacionesToolStripMenuItem";
-            this.notificacionesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.notificacionesToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.notificacionesToolStripMenuItem.Text = "Notificaciones";
             // 
             // clientesToolStripMenuItem
@@ -82,62 +83,71 @@ namespace CapaGUI
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenedorToolStripMenuItem});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // mantenedorToolStripMenuItem
             // 
             this.mantenedorToolStripMenuItem.Name = "mantenedorToolStripMenuItem";
-            this.mantenedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mantenedorToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.mantenedorToolStripMenuItem.Text = "Mantenedor";
             this.mantenedorToolStripMenuItem.Click += new System.EventHandler(this.mantenedorToolStripMenuItem_Click);
             // 
             // profesionalesToolStripMenuItem
             // 
+            this.profesionalesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mantenedorProgesionalesToolStripMenuItem});
             this.profesionalesToolStripMenuItem.Name = "profesionalesToolStripMenuItem";
-            this.profesionalesToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.profesionalesToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.profesionalesToolStripMenuItem.Text = "Profesionales";
             // 
             // contratosToolStripMenuItem
             // 
             this.contratosToolStripMenuItem.Name = "contratosToolStripMenuItem";
-            this.contratosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.contratosToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.contratosToolStripMenuItem.Text = "Contratos";
             // 
             // finanzasToolStripMenuItem
             // 
             this.finanzasToolStripMenuItem.Name = "finanzasToolStripMenuItem";
-            this.finanzasToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.finanzasToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.finanzasToolStripMenuItem.Text = "Servicios";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
             this.salirToolStripMenuItem.Text = "Finanzas";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(65, 20);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(82, 24);
             this.salirToolStripMenuItem1.Text = "Reportes";
             // 
             // salirToolStripMenuItem2
             // 
             this.salirToolStripMenuItem2.Name = "salirToolStripMenuItem2";
-            this.salirToolStripMenuItem2.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem2.Size = new System.Drawing.Size(52, 24);
             this.salirToolStripMenuItem2.Text = "Salir";
             this.salirToolStripMenuItem2.Click += new System.EventHandler(this.salirToolStripMenuItem2_Click);
             // 
+            // mantenedorProgesionalesToolStripMenuItem
+            // 
+            this.mantenedorProgesionalesToolStripMenuItem.Name = "mantenedorProgesionalesToolStripMenuItem";
+            this.mantenedorProgesionalesToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.mantenedorProgesionalesToolStripMenuItem.Text = "Mantenedor Profesionales";
+            this.mantenedorProgesionalesToolStripMenuItem.Click += new System.EventHandler(this.mantenedorProgesionalesToolStripMenuItem_Click);
+            // 
             // PantallaAdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 449);
+            this.ClientSize = new System.Drawing.Size(781, 553);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PantallaAdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Panel de Administrador";
@@ -163,5 +173,6 @@ namespace CapaGUI
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem mantenedorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenedorProgesionalesToolStripMenuItem;
     }
 }
