@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MantenedorAdministradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorAdministradores.Designer.cs">
+      <DependentUpon>MantenedorAdministradores.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MantenedorAdministradores.resx">
+      <DependentUpon>MantenedorAdministradores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListarClientes.resx">
       <DependentUpon>ListarClientes.cs</DependentUpon>
     </EmbeddedResource>

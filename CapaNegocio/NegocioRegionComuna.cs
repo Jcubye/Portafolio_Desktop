@@ -41,5 +41,27 @@ namespace CapaNegocio
             return this.Conex.DbDataSet;
         }
 
+        public List<String> consultaComuna_region_by_id(int comuna_id)
+        {
+            this.configurarConexion();
+            this.Conex.NombreTabla = "comuna";
+            this.Conex.CadenaSQL = "select r.nombre as region, c.nombre as comuna, r.id from comuna c join region r on c.region_id = r.id where c.id = " + comuna_id + ";";
+            this.Conex.EsSelect = true;
+            this.Conex.conectar();
+            List<string> Consulta = new List<string>();
+            DataTable dt = new DataTable();
+            dt = this.Conex.DbDataSet.Tables[0];
+
+            if (dt.Rows.Count > 0)
+            {
+                Consulta.Add((String)dt.Rows[0]["region"]); //= (String)dt.Rows[0]["idproducto"];
+                Consulta.Add((String)dt.Rows[0]["comuna"]);
+                Consulta.Add((dt.Rows[0]["id"]).ToString());
+
+            }
+
+            return Consulta;
+        }
+
     }
 }
