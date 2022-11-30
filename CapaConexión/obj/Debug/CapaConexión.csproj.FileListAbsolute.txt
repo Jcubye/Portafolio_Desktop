@@ -1,0 +1,6 @@
+C:\Portafolio_Desktop-master\CapaConexión\bin\Debug\CapaConexión.dll
+C:\Portafolio_Desktop-master\CapaConexión\bin\Debug\CapaConexión.pdb
+C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.csproj.AssemblyReference.cache
+C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.csproj.CoreCompileInputs.cache
+C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.dll
+C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.pdb
