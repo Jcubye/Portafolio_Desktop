@@ -97,7 +97,7 @@ namespace CapaGUI
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(912, 492);
+            this.btnSalir.Location = new System.Drawing.Point(1021, 500);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(110, 32);
             this.btnSalir.TabIndex = 3;
@@ -108,7 +108,7 @@ namespace CapaGUI
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(744, 492);
+            this.btnAgregar.Location = new System.Drawing.Point(853, 500);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(110, 32);
             this.btnAgregar.TabIndex = 2;
@@ -119,9 +119,9 @@ namespace CapaGUI
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(157, 113);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 114);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(865, 360);
+            this.dataGridView1.Size = new System.Drawing.Size(1103, 360);
             this.dataGridView1.TabIndex = 1;
             // 
             // label1

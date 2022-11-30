@@ -60,6 +60,10 @@ namespace CapaGUI
                     dataGridView1.Columns[4].HeaderText = "Telefono";
                     dataGridView1.Columns[5].HeaderText = "Razon social";
                     dataGridView1.Columns[6].HeaderText = "Estado";
+
+                    dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Modificar", UseColumnTextForButtonValue = true});
+                    dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
+                    dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
                     //this.btnActualizar.Enabled = true;
                 }
             }
