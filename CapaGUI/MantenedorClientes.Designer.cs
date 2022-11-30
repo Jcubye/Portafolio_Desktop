@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorClientes));
             this.cmbRegion = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnListar = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtFechaNac = new System.Windows.Forms.DateTimePicker();
@@ -97,24 +96,6 @@
             this.label1.Text = "Región:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnListar
-            // 
-            this.btnListar.BackColor = System.Drawing.Color.Coral;
-            this.btnListar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnListar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnListar.FlatAppearance.BorderSize = 0;
-            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnListar.Location = new System.Drawing.Point(337, 361);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(101, 39);
-            this.btnListar.TabIndex = 111;
-            this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = false;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -138,7 +119,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnAgregar.Location = new System.Drawing.Point(181, 361);
+            this.btnAgregar.Location = new System.Drawing.Point(254, 361);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(101, 39);
@@ -204,8 +185,6 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(133, 20);
             this.txtCorreo.TabIndex = 97;
-            this.txtCorreo.Enter += new System.EventHandler(this.txtCorreo_Enter);
-            this.txtCorreo.Leave += new System.EventHandler(this.txtCorreo_Leave);
             // 
             // txtRut
             // 
@@ -215,8 +194,7 @@
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(103, 20);
             this.txtRut.TabIndex = 96;
-            this.txtRut.Enter += new System.EventHandler(this.txtRut_Enter);
-            this.txtRut.Leave += new System.EventHandler(this.txtRut_Leave);
+            this.txtRut.Text = "Ej: 18.732.979-5";
             // 
             // label9
             // 
@@ -570,7 +548,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnSalir.Location = new System.Drawing.Point(495, 361);
+            this.btnSalir.Location = new System.Drawing.Point(452, 361);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(101, 39);
@@ -605,7 +583,6 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.cmbRegion);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnListar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtFechaNac);
@@ -637,7 +614,6 @@
 
         private System.Windows.Forms.ComboBox cmbRegion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.DateTimePicker txtFechaNac;
