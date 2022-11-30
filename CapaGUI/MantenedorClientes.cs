@@ -149,43 +149,6 @@ namespace CapaGUI
             this.txtRubro.Text = auxNegR.ObtenerDescRubro(this.cmbRubro.Text);
         }
 
-        //metodo para simular placeholder
-        private void txtRut_Enter(object sender, EventArgs e)
-        {
-            if (txtRut.Text == "Ej: 12.345.678-9")
-            {
-                txtRut.Text = "";
-                txtRut.ForeColor = System.Drawing.Color.DarkGray;
-            }
-        }
-
-        private void txtRut_Leave(object sender, EventArgs e)
-        {
-            if (txtRut.Text == "")
-            {
-                txtRut.Text = "Ej: 12.345.678-9";
-                txtRut.ForeColor = System.Drawing.Color.DarkGray;
-            }
-        }
-
-        private void txtCorreo_Enter(object sender, EventArgs e)
-        {
-            if (txtCorreo.Text == "Ej: ejemplo@correo.cl")
-            {
-                txtCorreo.Text = "";
-                txtCorreo.ForeColor = System.Drawing.Color.DarkGray;
-            }
-        }
-
-        private void txtCorreo_Leave(object sender, EventArgs e)
-        {
-            if (txtCorreo.Text == "")
-            {
-                txtCorreo.Text = "Ej: ejemplo@correo.cl";
-                txtCorreo.ForeColor = System.Drawing.Color.DarkGray;
-            }
-        }
-
         //metodo para validar rut
         public static bool ValidaRut(string rut)
         {
