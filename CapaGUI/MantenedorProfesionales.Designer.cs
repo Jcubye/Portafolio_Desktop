@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtIdUsuario = new System.Windows.Forms.TextBox();
@@ -46,41 +46,39 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.profesionalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prueba_portafolioDataSet = new CapaGUI.prueba_portafolioDataSet();
+            this.profesionalTableAdapter = new CapaGUI.prueba_portafolioDataSetTableAdapters.profesionalTableAdapter();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.profesionalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_portafolioDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(688, 380);
+            this.btnVolver.Location = new System.Drawing.Point(718, 306);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(100, 28);
             this.btnVolver.TabIndex = 36;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(522, 380);
+            this.btnListar.Location = new System.Drawing.Point(529, 306);
             this.btnListar.Margin = new System.Windows.Forms.Padding(4);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(100, 28);
             this.btnListar.TabIndex = 35;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Location = new System.Drawing.Point(339, 380);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(100, 28);
-            this.btnActualizar.TabIndex = 34;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(175, 380);
+            this.btnAgregar.Location = new System.Drawing.Point(100, 306);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(100, 28);
@@ -91,7 +89,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(640, 218);
+            this.txtEstado.Location = new System.Drawing.Point(587, 173);
             this.txtEstado.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(215, 22);
@@ -99,7 +97,7 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(640, 154);
+            this.txtIdUsuario.Location = new System.Drawing.Point(587, 109);
             this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(215, 22);
@@ -115,7 +113,7 @@
             // 
             // txtApellidoMaterno
             // 
-            this.txtApellidoMaterno.Location = new System.Drawing.Point(640, 51);
+            this.txtApellidoMaterno.Location = new System.Drawing.Point(194, 216);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
             this.txtApellidoMaterno.Size = new System.Drawing.Size(215, 22);
@@ -131,7 +129,7 @@
             // 
             // txtRolProfesional
             // 
-            this.txtRolProfesional.Location = new System.Drawing.Point(640, 96);
+            this.txtRolProfesional.Location = new System.Drawing.Point(587, 51);
             this.txtRolProfesional.Margin = new System.Windows.Forms.Padding(4);
             this.txtRolProfesional.Name = "txtRolProfesional";
             this.txtRolProfesional.Size = new System.Drawing.Size(215, 22);
@@ -148,7 +146,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(559, 154);
+            this.label2.Location = new System.Drawing.Point(506, 109);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
@@ -178,7 +176,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(518, 51);
+            this.label5.Location = new System.Drawing.Point(72, 216);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 16);
@@ -188,7 +186,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(528, 96);
+            this.label4.Location = new System.Drawing.Point(475, 51);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 16);
@@ -198,7 +196,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(579, 222);
+            this.label3.Location = new System.Drawing.Point(526, 177);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 16);
@@ -215,14 +213,39 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Id Profesional";
             // 
+            // profesionalBindingSource
+            // 
+            this.profesionalBindingSource.DataMember = "profesional";
+            this.profesionalBindingSource.DataSource = this.prueba_portafolioDataSet;
+            // 
+            // prueba_portafolioDataSet
+            // 
+            this.prueba_portafolioDataSet.DataSetName = "prueba_portafolioDataSet";
+            this.prueba_portafolioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // profesionalTableAdapter
+            // 
+            this.profesionalTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(331, 306);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(100, 28);
+            this.btnLimpiar.TabIndex = 38;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // MantenedorProfesionales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 499);
+            this.ClientSize = new System.Drawing.Size(1006, 396);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtIdUsuario);
@@ -240,6 +263,9 @@
             this.Controls.Add(this.label1);
             this.Name = "MantenedorProfesionales";
             this.Text = "MantenedorProfesionales";
+            this.Load += new System.EventHandler(this.MantenedorProfesionales_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.profesionalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_portafolioDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,7 +275,6 @@
 
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtIdUsuario;
@@ -265,5 +290,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private prueba_portafolioDataSet prueba_portafolioDataSet;
+        private System.Windows.Forms.BindingSource profesionalBindingSource;
+        private prueba_portafolioDataSetTableAdapters.profesionalTableAdapter profesionalTableAdapter;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

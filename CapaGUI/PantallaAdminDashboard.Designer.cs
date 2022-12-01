@@ -35,12 +35,13 @@ namespace CapaGUI
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorProgesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.finanzasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenedorProgesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoDeProfesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,10 +97,18 @@ namespace CapaGUI
             // profesionalesToolStripMenuItem
             // 
             this.profesionalesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenedorProgesionalesToolStripMenuItem});
+            this.mantenedorProgesionalesToolStripMenuItem,
+            this.listadoDeProfesionalesToolStripMenuItem});
             this.profesionalesToolStripMenuItem.Name = "profesionalesToolStripMenuItem";
             this.profesionalesToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.profesionalesToolStripMenuItem.Text = "Profesionales";
+            // 
+            // mantenedorProgesionalesToolStripMenuItem
+            // 
+            this.mantenedorProgesionalesToolStripMenuItem.Name = "mantenedorProgesionalesToolStripMenuItem";
+            this.mantenedorProgesionalesToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.mantenedorProgesionalesToolStripMenuItem.Text = "Mantenedor Profesionales";
+            this.mantenedorProgesionalesToolStripMenuItem.Click += new System.EventHandler(this.mantenedorProgesionalesToolStripMenuItem_Click);
             // 
             // contratosToolStripMenuItem
             // 
@@ -133,12 +142,12 @@ namespace CapaGUI
             this.salirToolStripMenuItem2.Text = "Salir";
             this.salirToolStripMenuItem2.Click += new System.EventHandler(this.salirToolStripMenuItem2_Click);
             // 
-            // mantenedorProgesionalesToolStripMenuItem
+            // listadoDeProfesionalesToolStripMenuItem
             // 
-            this.mantenedorProgesionalesToolStripMenuItem.Name = "mantenedorProgesionalesToolStripMenuItem";
-            this.mantenedorProgesionalesToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
-            this.mantenedorProgesionalesToolStripMenuItem.Text = "Mantenedor Profesionales";
-            this.mantenedorProgesionalesToolStripMenuItem.Click += new System.EventHandler(this.mantenedorProgesionalesToolStripMenuItem_Click);
+            this.listadoDeProfesionalesToolStripMenuItem.Name = "listadoDeProfesionalesToolStripMenuItem";
+            this.listadoDeProfesionalesToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.listadoDeProfesionalesToolStripMenuItem.Text = "Listado de Profesionales";
+            this.listadoDeProfesionalesToolStripMenuItem.Click += new System.EventHandler(this.listadoDeProfesionalesToolStripMenuItem_Click);
             // 
             // PantallaAdminDashboard
             // 
@@ -174,5 +183,6 @@ namespace CapaGUI
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem mantenedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorProgesionalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoDeProfesionalesToolStripMenuItem;
     }
 }

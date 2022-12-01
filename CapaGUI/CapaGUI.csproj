@@ -52,6 +52,12 @@
     <Compile Include="ListarClientes.Designer.cs">
       <DependentUpon>ListarClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarProfesionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarProfesionales.Designer.cs">
+      <DependentUpon>ListarProfesionales.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="ListarClientes.resx">
       <DependentUpon>ListarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarProfesionales.resx">
+      <DependentUpon>ListarProfesionales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorClientes.resx">
       <DependentUpon>MantenedorClientes.cs</DependentUpon>

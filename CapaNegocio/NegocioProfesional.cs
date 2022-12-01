@@ -17,12 +17,15 @@ namespace CapaNegocio
         public Conexion Conec { get => conec; set => conec = value; }
 
 
+
+
+
         public void configurarConexion()
         {
             this.Conec = new Conexion();
             this.Conec.NombreBaseDeDatos = "prueba_portafolio";
             this.Conec.NombreTabla = "profesional";
-            this.Conec.CadenaConexion = "Data Source=DESKTOP-F9K8RB0\\SQLEXPRESS;Initial Catalog=profesional;Integrated Security=True";
+            this.Conec.CadenaConexion = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=prueba_portafolio;Integrated Security=True";
         }
 
         public DataSet retornaProfesional()
@@ -40,14 +43,17 @@ namespace CapaNegocio
         {
 
             this.configurarConexion();
-            this.Conec.CadenaSQL = "INSERT INTO profesional(nombre, apellido_p, apellido_m, rol, estado) VALUES('"
+            this.Conec.CadenaSQL = "SET IDENTITY_INSERT profesional ON insert into profesional (id, nombre, apellido_p, apellido_m, rol, estado, usuarios_id) VALUES('"
+                + profesional.ID1 + "', '"
                 + profesional.Nombre1 + "', '"
                 + profesional.ApellidoPaterno1 + "', '"
                 + profesional.ApellidoMaterno1 + "', '"
                 + profesional.Rol1 + "', '"
-                + profesional.Estado1 + "'); ";
+                + profesional.Estado1 + "','"
+                 +profesional.IdUsuario1 + "'); ";
             this.Conec.EsSelect = false;
             this.Conec.conectar();
+
 
         }
 
@@ -105,12 +111,11 @@ namespace CapaNegocio
 
         }
 
-        public Profesional buscaCliente(String nombre)
+        public Profesional buscaProfesional()
         {
             Profesional auxProfesional = new Profesional();
             this.configurarConexion();
-            this.Conec.CadenaSQL = "SELECT * FROM profesional" +
-                                    " WHERE nombre = '" + nombre + "';";
+            this.Conec.CadenaSQL = "SELECT * FROM profesional";
             this.Conec.EsSelect = true;
             this.Conec.conectar();
             DataTable dt = new DataTable();

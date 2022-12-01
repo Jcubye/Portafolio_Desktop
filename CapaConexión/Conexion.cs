@@ -192,25 +192,29 @@ namespace CapaConexion
 
         } //Fin conectar
 
-        //public static void Main(String[] args)
-        //{
+        public static void Main(String[] args)
+        {
 
-        //    Conexion conec1 = new Conexion();
-        //    conec1.NombreBaseDeDatos = "prueba_portafolio";
-        //    conec1.NombreTabla = "cliente";
-        //    conec1.CadenaConexion = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=prueba_portafolio;Integrated Security=True";
-        //    conec1.CadenaSQL = "select * from usuarios";
-        //    conec1.EsSelect = true;
-        //    conec1.conectar();
+           Conexion conec1 = new Conexion();
+           conec1.NombreBaseDeDatos = "prueba_portafolio";
+           conec1.NombreTabla = "profesional";
+           conec1.CadenaConexion = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=prueba_portafolio;Integrated Security=True";
+           conec1.CadenaSQL = " SET IDENTITY_INSERT profesional ON \r\n insert into profesional (id, nombre, apellido_p, apellido_m, rol, estado, usuarios_id) \r\n values (3,'Veronica', 'Ormazabal', 'Sepulveda','QA', 'inactivo', 2) \r\n SET IDENTITY_INSERT profesional OFF";
+            conec1.EsSelect = true;
+            conec1.conectar();
 
-        //    foreach (System.Data.DataRow dr in conec1.dbDataSet.Tables[conec1.NombreTabla].Rows)
-        //    {
-        //        Console.WriteLine(dr["rut"] + " " + dr["correo"]);
-        //    }
+           foreach (System.Data.DataRow dr in conec1.dbDataSet.Tables[conec1.NombreTabla].Rows)
+          {
+              Console.WriteLine(dr["id"] + " " + dr["nombre"]);
+            }
 
-        //}
+        }
 
 
 
     }
 }
+
+
+    
+

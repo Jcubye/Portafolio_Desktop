@@ -42,11 +42,14 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(223, 82);
+            this.dataGridView1.Location = new System.Drawing.Point(297, 101);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(716, 413);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(955, 508);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnActualizar
             // 
@@ -57,10 +60,10 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnActualizar.Location = new System.Drawing.Point(74, 280);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnActualizar.Location = new System.Drawing.Point(99, 345);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(101, 39);
+            this.btnActualizar.Size = new System.Drawing.Size(135, 48);
             this.btnActualizar.TabIndex = 107;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -75,10 +78,10 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnSalir.Location = new System.Drawing.Point(74, 370);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSalir.Location = new System.Drawing.Point(99, 455);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(101, 39);
+            this.btnSalir.Size = new System.Drawing.Size(135, 48);
             this.btnSalir.TabIndex = 108;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -93,10 +96,10 @@
             this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnListar.Location = new System.Drawing.Point(74, 190);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnListar.Location = new System.Drawing.Point(99, 234);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(101, 39);
+            this.btnListar.Size = new System.Drawing.Size(135, 48);
             this.btnListar.TabIndex = 109;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = false;
@@ -104,15 +107,16 @@
             // 
             // ListarClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1017, 550);
+            this.ClientSize = new System.Drawing.Size(1356, 677);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListarClientes";
             this.Text = "Listado de clientes";
             this.Load += new System.EventHandler(this.ListarClientes_Load);

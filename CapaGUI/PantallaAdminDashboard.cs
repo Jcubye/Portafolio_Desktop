@@ -49,5 +49,11 @@ namespace CapaGUI
             MantenedorProfesionales pmantenedorP = new MantenedorProfesionales();
             pmantenedorP.ShowDialog();
         }
+
+        private void listadoDeProfesionalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListarProfesionales plistarProfesional = new ListarProfesionales();
+            plistarProfesional.ShowDialog();
+        }
     }
 }
