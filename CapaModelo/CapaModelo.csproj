@@ -43,9 +43,12 @@
   <ItemGroup>
     <Compile Include="Cliente.cs" />
     <Compile Include="Comuna.cs" />
+    <Compile Include="Contrato.cs" />
+    <Compile Include="Profesional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rubro.cs" />
     <Compile Include="Administrador.cs" />
+    <Compile Include="Servicio.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

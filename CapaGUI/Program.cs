@@ -17,7 +17,8 @@ namespace CapaGUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MantenedorAdministradores());
-            Application.Run(new PantallaLogin());
+            //Application.Run(new PantallaLogin());
+            Application.Run(new PantallaContrato());
         }
     }
 }

@@ -358,7 +358,7 @@ namespace CapaGUI
             this.Usuario_Admin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Usuario_Admin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Usuario_Admin.GridColor = System.Drawing.SystemColors.HighlightText;
-            this.Usuario_Admin.Location = new System.Drawing.Point(34, 60);
+            this.Usuario_Admin.Location = new System.Drawing.Point(32, 60);
             this.Usuario_Admin.Margin = new System.Windows.Forms.Padding(0);
             this.Usuario_Admin.Name = "Usuario_Admin";
             this.Usuario_Admin.ReadOnly = true;
@@ -379,7 +379,7 @@ namespace CapaGUI
             this.Usuario_Admin.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Usuario_Admin.RowTemplate.Height = 30;
             this.Usuario_Admin.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Usuario_Admin.Size = new System.Drawing.Size(154, 150);
+            this.Usuario_Admin.Size = new System.Drawing.Size(139, 150);
             this.Usuario_Admin.TabIndex = 41;
             this.Usuario_Admin.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Usuario_Admin_CellDoubleClick);
             // 
@@ -413,7 +413,7 @@ namespace CapaGUI
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnIngresar.Location = new System.Drawing.Point(209, 343);
+            this.btnIngresar.Location = new System.Drawing.Point(167, 297);
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(5);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(101, 39);
@@ -431,7 +431,7 @@ namespace CapaGUI
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnModificar.Location = new System.Drawing.Point(332, 343);
+            this.btnModificar.Location = new System.Drawing.Point(332, 297);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(101, 39);
@@ -449,7 +449,7 @@ namespace CapaGUI
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnLimpiar.Location = new System.Drawing.Point(455, 343);
+            this.btnLimpiar.Location = new System.Drawing.Point(481, 297);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(101, 39);

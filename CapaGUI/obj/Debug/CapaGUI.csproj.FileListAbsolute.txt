@@ -19,3 +19,7 @@ C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
 C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.exe
 C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.pdb
 C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.MantenedorAdministradores.resources
+C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.ProfesionalesDataView.resources
+C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaContrato.resources
+C:\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.xml
