@@ -55,10 +55,10 @@ namespace CapaGUI
             this.dataGridView1.Columns["rut"].Visible = false;
 
             //cargar combobox en datagridview para estados
-            string[] estados = new string[] { "Activo", "Inactivo", "Suspendido" };
-            DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
-            cmb.DataSource = estados;
-            this.dataGridView1.Columns.Add(cmb); //agrega una nueva columna, se debe reemplazar el textbox por combobox (preguntar a profe)
+            //string[] estados = new string[] { "Activo", "Inactivo", "Suspendido" };
+            //DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
+            //cmb.DataSource = estados;
+            //this.dataGridView1.Columns.Add(cmb); //agrega una nueva columna, se debe reemplazar el textbox por combobox (preguntar a profe)
 
             try
             {

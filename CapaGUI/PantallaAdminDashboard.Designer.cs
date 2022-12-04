@@ -29,196 +29,215 @@ namespace CapaGUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.profesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.finanzasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.asToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.servicioSolicitadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.valorEstimadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.observacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // tabControl1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.perfilToolStripMenuItem,
-            this.clientesToolStripMenuItem,
-            this.profesionalesToolStripMenuItem,
-            this.contratosToolStripMenuItem,
-            this.finanzasToolStripMenuItem,
-            this.salirToolStripMenuItem,
-            this.salirToolStripMenuItem1,
-            this.toolStripMenuItem3,
-            this.salirToolStripMenuItem2});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(713, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage8);
+            this.tabControl1.Controls.Add(this.tabPage9);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(1, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.ShowToolTips = true;
+            this.tabControl1.Size = new System.Drawing.Size(1174, 609);
+            this.tabControl1.TabIndex = 0;
+            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
-            // perfilToolStripMenuItem
+            // tabPage1
             // 
-            this.perfilToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.notificacionesToolStripMenuItem});
-            this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.perfilToolStripMenuItem.Text = "Dashboard";
-            this.perfilToolStripMenuItem.Click += new System.EventHandler(this.perfilToolStripMenuItem_Click);
+            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dashboard";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // notificacionesToolStripMenuItem
+            // tabPage2
             // 
-            this.notificacionesToolStripMenuItem.Name = "notificacionesToolStripMenuItem";
-            this.notificacionesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.notificacionesToolStripMenuItem.Text = "Notificaciones";
+            this.tabPage2.Controls.Add(this.btnSalir);
+            this.tabPage2.Controls.Add(this.btnAgregar);
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Clientes";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // clientesToolStripMenuItem
+            // btnSalir
             // 
-            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenedorToolStripMenuItem});
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(1021, 500);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(110, 32);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.button2_Click);
             // 
-            // mantenedorToolStripMenuItem
+            // btnAgregar
             // 
-            this.mantenedorToolStripMenuItem.Name = "mantenedorToolStripMenuItem";
-            this.mantenedorToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.mantenedorToolStripMenuItem.Text = "Mantenedor";
-            this.mantenedorToolStripMenuItem.Click += new System.EventHandler(this.mantenedorToolStripMenuItem_Click);
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(853, 500);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(110, 32);
+            this.btnAgregar.TabIndex = 2;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // profesionalesToolStripMenuItem
+            // dataGridView1
             // 
-            this.profesionalesToolStripMenuItem.Name = "profesionalesToolStripMenuItem";
-            this.profesionalesToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.profesionalesToolStripMenuItem.Text = "Profesionales";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(28, 114);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1103, 360);
+            this.dataGridView1.TabIndex = 1;
             // 
-            // contratosToolStripMenuItem
+            // label1
             // 
-            this.contratosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clienteToolStripMenuItem,
-            this.servicioSolicitadoToolStripMenuItem,
-            this.valorEstimadoToolStripMenuItem,
-            this.observacionesToolStripMenuItem});
-            this.contratosToolStripMenuItem.Name = "contratosToolStripMenuItem";
-            this.contratosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.contratosToolStripMenuItem.Text = "Contratos";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(520, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CLIENTES";
             // 
-            // finanzasToolStripMenuItem
+            // tabPage3
             // 
-            this.finanzasToolStripMenuItem.Name = "finanzasToolStripMenuItem";
-            this.finanzasToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
-            this.finanzasToolStripMenuItem.Text = "Solicitud de Servicios";
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Profesionales";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // salirToolStripMenuItem
+            // tabPage4
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.salirToolStripMenuItem.Text = "Finanzas";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Contratos";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // salirToolStripMenuItem1
+            // tabPage5
             // 
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(65, 20);
-            this.salirToolStripMenuItem1.Text = "Reportes";
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Actividades";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // toolStripMenuItem3
+            // tabPage6
             // 
-            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asToolStripMenuItem});
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(106, 20);
-            this.toolStripMenuItem3.Text = "Administradores";
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Finanzas";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // asToolStripMenuItem
+            // tabPage7
             // 
-            this.asToolStripMenuItem.Name = "asToolStripMenuItem";
-            this.asToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.asToolStripMenuItem.Text = "Modificar";
-            this.asToolStripMenuItem.Click += new System.EventHandler(this.asToolStripMenuItem_Click);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Urgencia";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // salirToolStripMenuItem2
+            // tabPage8
             // 
-            this.salirToolStripMenuItem2.Name = "salirToolStripMenuItem2";
-            this.salirToolStripMenuItem2.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem2.Text = "Salir";
-            this.salirToolStripMenuItem2.Click += new System.EventHandler(this.salirToolStripMenuItem2_Click);
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Reportes";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // clienteToolStripMenuItem
+            // tabPage9
             // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            // 
-            // servicioSolicitadoToolStripMenuItem
-            // 
-            this.servicioSolicitadoToolStripMenuItem.Name = "servicioSolicitadoToolStripMenuItem";
-            this.servicioSolicitadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.servicioSolicitadoToolStripMenuItem.Text = "Servicio Solicitado";
-            // 
-            // valorEstimadoToolStripMenuItem
-            // 
-            this.valorEstimadoToolStripMenuItem.Name = "valorEstimadoToolStripMenuItem";
-            this.valorEstimadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.valorEstimadoToolStripMenuItem.Text = "Valor Estimado";
-            // 
-            // observacionesToolStripMenuItem
-            // 
-            this.observacionesToolStripMenuItem.Name = "observacionesToolStripMenuItem";
-            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.observacionesToolStripMenuItem.Text = "Observaciones";
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Salir";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // PantallaAdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 449);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(1176, 610);
+            this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "PantallaAdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Panel de Administrador";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PantallaAdminDashboard_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem perfilToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem profesionalesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem contratosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem finanzasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem notificacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem mantenedorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem asToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem servicioSolicitadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem valorEstimadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem observacionesToolStripMenuItem;
+        
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }
