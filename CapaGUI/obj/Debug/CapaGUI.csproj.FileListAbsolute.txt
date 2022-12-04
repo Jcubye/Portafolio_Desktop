@@ -23,3 +23,28 @@ C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.ProfesionalesDataView.res
 C:\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaContrato.resources
 C:\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.dll
 C:\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaGUI.exe
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaGUI.pdb
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaModelo.dll
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaNegocio.dll
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaConexión.dll
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaModelo.pdb
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaNegocio.pdb
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaConexión.pdb
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.AssemblyReference.cache
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.MantenedorAdministradores.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.ListarClientes.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.MantenedorClientes.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaAdminDashboard.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaContrato.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaLogin.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaProfesionalDashboard.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.ProfesionalesDataView.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.Properties.Resources.resources
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.GenerateResource.cache
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.CoreCompileInputs.cache
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.exe
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.pdb

@@ -15,6 +15,46 @@ namespace CapaGUI
         public PantallaAdminDashboard()
         {
             InitializeComponent();
+
+            CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
+            this.dataGridView1.DataSource = auxNeg.consultaCliente();
+            this.dataGridView1.DataMember = "usuarios";
+
+            dataGridView1.Columns[0].HeaderText = "Correo";
+            dataGridView1.Columns[1].HeaderText = "Clave";
+            dataGridView1.Columns[2].HeaderText = "Rut";
+            dataGridView1.Columns[3].HeaderText = "Direccion";
+            dataGridView1.Columns[4].HeaderText = "Telefono";
+            dataGridView1.Columns[5].HeaderText = "Razon social";
+            dataGridView1.Columns[6].HeaderText = "Estado";
+
+            dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Modificar", UseColumnTextForButtonValue = true });
+            dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
+            dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
+
+            
+
+            CapaNegocio.NegocioContrato auxContrato = new CapaNegocio.NegocioContrato();
+            this.dataGridContratos.DataSource = auxContrato.consultaContrato();
+            this.dataGridContratos.DataMember = "contrato";
+
+
+            dataGridContratos.Columns[0].HeaderText = "id";
+            dataGridContratos.Columns[1].HeaderText = "Detalle";
+            dataGridContratos.Columns[2].HeaderText = "Fecha Inicio";
+            dataGridContratos.Columns[3].HeaderText = "Fecha Termino";
+            dataGridContratos.Columns[4].HeaderText = "Cliente ID";
+            dataGridContratos.Columns[5].HeaderText = "Razon social";
+            dataGridContratos.Columns[6].HeaderText = "Estado";
+            dataGridContratos.Columns[7].HeaderText = "Usuario id";
+            dataGridContratos.Columns[8].HeaderText = "Rubro id";
+            dataGridContratos.Columns[0].Visible = false;
+            dataGridContratos.Columns[4].Visible = false;
+            dataGridContratos.Columns[7].Visible = false;
+            dataGridContratos.Columns[8].Visible = false;
+
+            dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
+            dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
         }
 
         private void salirToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -51,21 +91,20 @@ namespace CapaGUI
                     MessageBox.Show("No hay clientes a listar", "Ups!");
                     //this.btnActualizar.Enabled = false;
                 }
-                else
-                {
-                    dataGridView1.Columns[0].HeaderText = "Correo";
-                    dataGridView1.Columns[1].HeaderText = "Clave";
-                    dataGridView1.Columns[2].HeaderText = "Rut";
-                    dataGridView1.Columns[3].HeaderText = "Direccion";
-                    dataGridView1.Columns[4].HeaderText = "Telefono";
-                    dataGridView1.Columns[5].HeaderText = "Razon social";
-                    dataGridView1.Columns[6].HeaderText = "Estado";
+               
+            }
+            if (tabControl1.SelectedIndex == 3)
+            {
+                CapaNegocio.NegocioContrato auxContrato = new CapaNegocio.NegocioContrato();
+                this.dataGridContratos.DataSource = auxContrato.consultaContrato();
+                this.dataGridContratos.DataMember = "contrato";
 
-                    dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Modificar", UseColumnTextForButtonValue = true});
-                    dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
-                    dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
-                    //this.btnActualizar.Enabled = true;
+                if (this.dataGridContratos.Rows.Count < 1)
+                {
+                    MessageBox.Show("No hay contratos a listar", "Ups!");
+                    //this.btnActualizar.Enabled = false;
                 }
+                
             }
             if (tabControl1.SelectedIndex == 8)
             {
@@ -75,6 +114,12 @@ namespace CapaGUI
                     System.GC.Collect();
                 }   
             }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            PantallaContrato mc = new PantallaContrato();
+            mc.ShowDialog();
         }
     }
 }
