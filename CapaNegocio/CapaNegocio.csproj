@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Envio_correo.cs" />
+    <Compile Include="NegocioContrato.cs" />
+    <Compile Include="NegocioProfesional.cs" />
+    <Compile Include="NegocioServicio.cs" />
     <Compile Include="NegocioUsuario.cs" />
     <Compile Include="NegocioAdministrador.cs" />
     <Compile Include="NegocioCliente.cs" />

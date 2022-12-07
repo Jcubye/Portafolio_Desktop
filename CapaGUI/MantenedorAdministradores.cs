@@ -28,18 +28,6 @@ namespace CapaGUI
 
         private void MantenedorAdministradores_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'riskConsultingDataSetViews.User_Admin' Puede moverla o quitarla según sea necesario.
-            //this.user_AdminTableAdapter.Fill(this.riskConsultingDataSetViews.User_Admin);
-            // TODO: esta línea de código carga datos en la tabla 'riskConsultingDataSet.reporte' Puede moverla o quitarla según sea necesario.
-            //this.reporteTableAdapter.Fill(this.riskConsultingDataSet.reporte);
-            // TODO: esta línea de código carga datos en la tabla 'riskConsultingDataSet.capacitacion' Puede moverla o quitarla según sea necesario.
-            //this.capacitacionTableAdapter.Fill(this.riskConsultingDataSet.capacitacion);
-            // TODO: esta línea de código carga datos en la tabla 'riskConsultingDataSet.administrador' Puede moverla o quitarla según sea necesario.
-            //this.administradorTableAdapter.Fill(this.riskConsultingDataSet.administrador);
-            // TODO: esta línea de código carga datos en la tabla 'riskConsultingDataSet.usuarios' Puede moverla o quitarla según sea necesario.
-            //this.usuariosTableAdapter.Fill(this.riskConsultingDataSet.usuarios);
-            // TODO: esta línea de código carga datos en la tabla 'riskConsultingDataSet.comuna' Puede moverla o quitarla según sea necesario.
-            // this.comunaTableAdapter1.Fill(this.riskConsultingDataSet.comuna);
 
             //carga combobox con lista de regiones
             NegocioRegionComuna auxReg = new NegocioRegionComuna();
@@ -63,7 +51,6 @@ namespace CapaGUI
             Usuario_Admin.Columns[9].HeaderText = "id comuna";
             Usuario_Admin.Columns[10].HeaderText = "user id";
             Usuario_Admin.Columns[11].HeaderText = "admin id";
-           
             Usuario_Admin.Columns[1].Visible = false;
             Usuario_Admin.Columns[2].Visible = false;
             Usuario_Admin.Columns[3].Visible = false;
@@ -75,9 +62,6 @@ namespace CapaGUI
             Usuario_Admin.Columns[9].Visible = false;
             Usuario_Admin.Columns[10].Visible = false;
             Usuario_Admin.Columns[11].Visible = false;
-            //Usuario_Admin.Width
-            
-
         }
 
         public void Actualizar_data() {
@@ -159,7 +143,7 @@ namespace CapaGUI
                 if (e.ColumnIndex == 0)
                 {
                     int j = 12;
-                    for (int i = 0; i < j; i++)
+                    for (int i = 0; i < j; i++)   
                     {
                         Console.WriteLine(" el i " + i);
                         String dato = this.Usuario_Admin[i, e.RowIndex].Value.ToString();

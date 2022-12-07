@@ -127,6 +127,28 @@ namespace CapaNegocio
             return this.Conex.DbDataSet;
         }
 
+        public DataSet consultaClienteActivo()
+        {
+            this.configurarConexion();
+            this.Conex.NombreTabla = "usuarios";
+            this.Conex.CadenaSQL = "SELECT correo, clave, rut, direccion, telefono, razon_social, estado, r.nombre, r.descripcion, c.id " +
+                "FROM prueba_portafolio.dbo.usuarios u  JOIN prueba_portafolio.dbo.cliente c ON u.id = c.usuarios_id join rubro r on c.rubro_id = r.id where c.estado = 'activo'";
+            this.Conex.EsSelect = true;
+            this.Conex.conectar();
+            return this.Conex.DbDataSet;
+        }
+
+        public DataSet consultaClienteActivoFiltered(string rut)
+        {
+            this.configurarConexion();
+            this.Conex.NombreTabla = "usuarios";
+            this.Conex.CadenaSQL = "SELECT correo, clave, rut, direccion, telefono, razon_social, estado, r.nombre, r.descripcion, c.id " +
+                "FROM prueba_portafolio.dbo.usuarios u  JOIN prueba_portafolio.dbo.cliente c ON u.id = c.usuarios_id join rubro r on c.rubro_id = r.id where c.estado = 'activo' AND u.rut like '" + rut+"%'";
+            this.Conex.EsSelect = true;
+            this.Conex.conectar();
+            return this.Conex.DbDataSet;
+        }
+
         public int obtenerIdComuna (String nombreComuna)
         {
             this.configurarConexion();

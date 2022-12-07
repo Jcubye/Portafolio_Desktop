@@ -4,3 +4,9 @@ C:\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyRefe
 C:\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.pdb
