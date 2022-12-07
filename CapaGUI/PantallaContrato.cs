@@ -84,26 +84,48 @@ namespace CapaGUI
                 //Console.WriteLine(jsonObj);
                 var numero = jsonObj["serie"][0]["valor"];
                 ValorUF = numero;
-                // Console.WriteLine(numero);
+                
+                // Obtengo el directorio actual
+                string path = Directory.GetCurrentDirectory();
+                // Creo el fichero uf.txt y guardo mi variable
+                using (StreamWriter outputFile = new StreamWriter(path + "\\uf.txt")) {
+                    outputFile.WriteLine(ValorUF);
+                }
             }
             catch (Exception error)
             {
-                MessageBox.Show("Error en la respuesta de la api mindicador, procediendo con valor uf estandar 31060,59 ", "Mensaje Sistema");
+                string path = Directory.GetCurrentDirectory();
+                foreach (string line in System.IO.File.ReadLines(path + "\\uf.txt"))
+                {
+                    // System.Console.WriteLine(line + " kkk");
+                    ValorUF = Convert.ToDouble(line);
+                }
+                MessageBox.Show("Error en la respuesta de la api mindicador, procediendo con el ultimo valor UF guardado " + ValorUF , "Mensaje Sistema");
                 Console.WriteLine(error);
-                ValorUF = 31060.59;
+     
             }
             radioButton1.Checked = true;
             txtUFvalue.Text = "$ " + ValorUF;
-            TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
-            double result_calculo = ((difFechas.Days / 30) * ValorUF);
-            if (difFechas.Days / 30 <= 1)
-            {
-                txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo;
-            }
-            else
-            {
-                txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo;
-            }
+            //TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
+            //double result_calculo = ((difFechas.Days / 30) * ValorUF);
+            //int producto;
+            //if (radioButton1.Checked)
+            //{
+            //    producto = 5;
+            //}
+            //else
+            //{
+            //    producto = 6;
+            //}
+            //if (difFechas.Days / 30 <= 1)
+            //{
+            //    txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo * producto;
+            //}
+            //else
+            //{
+            //    txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo * producto;
+            //}
+            calculate_string();
         }
 
         private void btnIngresar_Click_1(object sender, EventArgs e)
@@ -148,16 +170,26 @@ namespace CapaGUI
         private void TimePickerInicio_ValueChanged(object sender, EventArgs e)
         {
             this.TimePickerFin.MinDate = this.TimePickerInicio.Value.AddMonths(1);//DateTime.Now.AddMonths(1);
-            TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
-            double result_calculo = ((difFechas.Days / 30) * ValorUF);
-            if (difFechas.Days / 30 <= 1)
-            {
-                txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo;
-            }
-            else {
-                txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo;
-            }
-           
+            //TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
+            //double result_calculo = ((difFechas.Days / 30) * ValorUF);
+            //int producto;
+            //if (radioButton1.Checked)
+            //{
+            //    producto = 5;
+            //}
+            //else
+            //{
+            //    producto = 6;
+            //}
+            //if (difFechas.Days / 30 <= 1)
+            //{
+            //    txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo * producto;
+            //}
+            //else
+            //{
+            //    txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo * producto;
+            //}
+            calculate_string();
             //txtResultado.Text = "" + ((difFechas.Days / 30) * ValorUF);
         }
 
@@ -264,16 +296,86 @@ namespace CapaGUI
         private void TimePickerFin_ValueChanged(object sender, EventArgs e)
         {
             //txtResultado.Text = "" + Math.Abs((TimePickerFin.Value.Month - TimePickerInicio.Value.Month) + 12 * (TimePickerFin.Value.Year - TimePickerInicio.Value.Year));
+            //TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
+            //double result_calculo = ((difFechas.Days / 30) * ValorUF);
+            //int producto;
+            //if (radioButton1.Checked)
+            //{
+            //    producto = 5;
+            //}
+            //else {
+            //    producto = 6;
+            //}
+            //if (difFechas.Days / 30 <= 1)
+            //{
+            //    txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo * producto;
+            //}
+            //else
+            //{
+            //    txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo * producto;
+            //}
+            calculate_string();
+        }
+
+        public void calculate_string() {
+
             TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
-            double result_calculo = ((difFechas.Days / 30) * ValorUF);
-            if (difFechas.Days / 30 <= 1)
+            double meses = (difFechas.Days / 30);
+            
+            int producto;
+            if (radioButton1.Checked)
             {
-                txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo;
+                producto = 5;
             }
             else
             {
-                txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo;
+                producto = 7;
             }
+            int uf_mes = 10;
+            
+            if (meses <= 1)
+            {
+                double result_calculo = (ValorUF * (uf_mes + producto));
+                txtResultado.Text = meses + " Mes de servicio por " + (uf_mes + producto) + " UF.";
+                txtCantidadUF.Text = (uf_mes + producto) + " UF = $" + result_calculo;
+            }
+            else if (meses > 1 && meses < 6)
+            {
+                double result_calculo = (ValorUF * (uf_mes + producto));
+                txtResultado.Text = meses + " Meses de servicio por " + (uf_mes + producto) + " UF mensuales.";
+                txtCantidadUF.Text = (uf_mes + producto) + " UF = $" + result_calculo;
+            }
+
+            else if (meses > 5 && meses < 12) {
+                uf_mes = 6;
+                double result_calculo = (ValorUF * (uf_mes + producto));
+                txtResultado.Text = meses + " Meses de servicio por " + (uf_mes + producto) + " UF mensuales.";
+                txtCantidadUF.Text = (uf_mes + producto) + " UF = $" + result_calculo;
+            }
+
+            else if (meses > 11)
+            {
+                uf_mes = 4;
+                double result_calculo = (ValorUF * (uf_mes + producto));
+                txtResultado.Text = meses + " Meses de servicio por " + (uf_mes + producto) + " UF mensuales.";
+                txtCantidadUF.Text = (uf_mes + producto) + " UF = $" + result_calculo;
+            }
+            else
+            {
+                MessageBox.Show("Error al realizar al calculo, meses indicados no son validos.", "Mensaje de Sistema");
+                //txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo * producto;
+            }
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            calculate_string();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.tabControl1.SelectedTab = this.tabPage2;
         }
     }
 }
