@@ -20,3 +20,14 @@ C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaNegocio\obj\Debug
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\bin\Debug\CapaConexión.dll
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\bin\Debug\CapaModelo.dll
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\bin\Debug\CapaConexión.pdb
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\bin\Debug\CapaModelo.pdb
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaNegocio\obj\Debug\CapaNegocio.pdb
