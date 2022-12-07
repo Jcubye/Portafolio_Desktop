@@ -209,6 +209,9 @@ namespace CapaGUI
             }
         }
 
-        
+        private void txtRut_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

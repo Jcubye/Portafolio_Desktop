@@ -16,3 +16,9 @@ C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-
 C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.pdb
