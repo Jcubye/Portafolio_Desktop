@@ -65,7 +65,10 @@ namespace CapaGUI
 
         private void PantallaAdminDashboard_Load(object sender, EventArgs e)
         {
-            
+            // TODO: esta línea de código carga datos en la tabla 'prueba_portafolioDataSet1.profesional' Puede moverla o quitarla según sea necesario.
+            this.profesionalTableAdapter1.Fill(this.prueba_portafolioDataSet1.profesional);
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -120,6 +123,18 @@ namespace CapaGUI
         {
             PantallaContrato mc = new PantallaContrato();
             mc.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            MantenedorProfesional mp = new MantenedorProfesional();
+            mp.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
         }
     }
 }

@@ -67,6 +67,12 @@
     <Compile Include="MantenedorClientes.Designer.cs">
       <DependentUpon>MantenedorClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProfesional.Designer.cs">
+      <DependentUpon>MantenedorProfesional.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaAdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="prueba_portafolioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prueba_portafolioDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="prueba_portafolio_profesionalDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -112,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorClientes.resx">
       <DependentUpon>MantenedorClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorProfesional.resx">
+      <DependentUpon>MantenedorProfesional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaAdminDashboard.resx">
       <DependentUpon>PantallaAdminDashboard.cs</DependentUpon>
@@ -138,17 +162,35 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CapaNegocio.NegocioCliente.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
+    <None Include="prueba_portafolioDataSet.xsc">
+      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="prueba_portafolioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prueba_portafolioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prueba_portafolioDataSet.xss">
+      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="prueba_portafolioDataSet1.xsc">
+      <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="prueba_portafolioDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prueba_portafolioDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prueba_portafolioDataSet1.xss">
+      <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="prueba_portafolio_profesionalDataSet.xsc">
       <DependentUpon>prueba_portafolio_profesionalDataSet.xsd</DependentUpon>
     </None>
