@@ -4,3 +4,9 @@ C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.csproj.Assemb
 C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.csproj.CoreCompileInputs.cache
 C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.dll
 C:\Portafolio_Desktop-master\CapaConexión\obj\Debug\CapaConexión.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaConexión\bin\Debug\CapaConexión.dll
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaConexión\bin\Debug\CapaConexión.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaConexión\obj\Debug\CapaConexión.csprojAssemblyReference.cache
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaConexión\obj\Debug\CapaConexión.csproj.CoreCompileInputs.cache
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaConexión\obj\Debug\CapaConexión.dll
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaConexión\obj\Debug\CapaConexión.pdb

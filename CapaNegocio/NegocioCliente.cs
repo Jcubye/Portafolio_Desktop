@@ -197,6 +197,27 @@ namespace CapaNegocio
             return auxRubro.Id;
         }
 
+        public void suspenderCliente (String rut)
+        {
+            this.configurarConexion();
+            this.Conex.NombreTabla = "cliente";
+            this.Conex.CadenaSQL = "UPDATE cliente "
+                                   + "SET "
+                                   + "estado = 'Suspendido' WHERE usuarios_id = (SELECT id from usuarios where rut = '" + rut + "');";
+            this.Conex.EsSelect = false;
+            this.Conex.conectar();
+        }
+
+        public void activarCliente(String rut)
+        {
+            this.configurarConexion();
+            this.Conex.NombreTabla = "cliente";
+            this.Conex.CadenaSQL = "UPDATE cliente "
+                                   + "SET "
+                                   + "estado = 'Activo' WHERE usuarios_id = (SELECT id from usuarios where rut = '" + rut + "');";
+            this.Conex.EsSelect = false;
+            this.Conex.conectar();
+        }
     }
 }
 

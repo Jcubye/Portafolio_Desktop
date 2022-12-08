@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarCliente.Designer.cs">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorAdministradores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>prueba_portafolio_profesionalDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarCliente.resx">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorAdministradores.resx">
       <DependentUpon>MantenedorAdministradores.cs</DependentUpon>
     </EmbeddedResource>

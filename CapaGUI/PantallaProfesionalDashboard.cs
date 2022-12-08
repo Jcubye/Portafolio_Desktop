@@ -18,7 +18,7 @@ namespace CapaGUI
 
 
             CapaNegocio.NegocioCliente auxCliente = new CapaNegocio.NegocioCliente();
-            this.dataGridView4.DataSource = auxCliente.consultaClienteActivoCamilo();
+            //this.dataGridView4.DataSource = auxCliente.consultaClienteActivoCamilo();
             this.dataGridView4.DataMember = "usuarios";
 
 

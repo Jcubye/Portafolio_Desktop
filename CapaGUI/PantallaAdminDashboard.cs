@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -66,7 +67,7 @@ namespace CapaGUI
         private void PantallaAdminDashboard_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'prueba_portafolioDataSet1.profesional' Puede moverla o quitarla según sea necesario.
-            this.profesionalTableAdapter1.Fill(this.prueba_portafolioDataSet1.profesional);
+            // descomentar al entregar this.profesionalTableAdapter1.Fill(this.prueba_portafolioDataSet1.profesional);
 
 
         }
@@ -135,6 +136,63 @@ namespace CapaGUI
         private void button3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 0;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dataGridView1.CurrentRow;
+            if (e.ColumnIndex == 1)
+            {
+                if((String)row.Cells[9].Value == "Activo")
+                {
+                    String rut = (String)row.Cells[5].Value;
+                    NegocioCliente nc = new NegocioCliente();
+                    nc.suspenderCliente(rut);
+                    MessageBox.Show("Cliente suspendido");
+                    btnRefresh.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Cliente ya se encuentra suspendido");
+                }
+            }
+            if (e.ColumnIndex == 0)
+            {
+                //MessageBox.Show("Modificar");
+                ActualizarCliente ac = new ActualizarCliente();
+
+                ac.txtCorreoAC.Text = (String)row.Cells[3].Value;
+                ac.txtClaveAC.Text = (String)row.Cells[4].Value;
+                ac.txtRutAC.Text = (String)row.Cells[5].Value;
+                ac.txtDireccionAC.Text = (String)row.Cells[6].Value;
+                ac.txtTelefonoAC.Text = Convert.ToString((int)row.Cells[7].Value);
+                ac.txtRSocialAC.Text = (String)row.Cells[8].Value;
+                ac.txtEstadoAC.Text = (String)row.Cells[9].Value;
+
+                ac.Show();
+            }
+            if (e.ColumnIndex == 2)
+            {
+                if ((String)row.Cells[9].Value == "Suspendido")
+                {
+                    String rut = (String)row.Cells[5].Value;
+                    NegocioCliente nc = new NegocioCliente();
+                    nc.activarCliente(rut);
+                    MessageBox.Show("Cliente activo");
+                    btnRefresh.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Cliente ya se encuentra activo");
+                }
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
+            this.dataGridView1.DataSource = auxNeg.consultaCliente();
+            this.dataGridView1.DataMember = "usuarios";
         }
     }
 }

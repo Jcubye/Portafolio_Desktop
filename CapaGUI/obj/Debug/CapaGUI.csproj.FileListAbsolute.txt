@@ -104,3 +104,31 @@ C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\
 C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
 C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.exe
 C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.csprojAssemblyReference.cache
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.MantenedorAdministradores.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.ListarClientes.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.MantenedorClientes.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.MantenedorProfesional.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.PantallaAdminDashboard.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.PantallaContrato.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.PantallaLogin.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.PantallaProfesionalDashboard.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.ProfesionalesDataView.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.Properties.Resources.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.csproj.GenerateResource.cache
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.csproj.CoreCompileInputs.cache
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.exe
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaGUI.exe.config
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaGUI.exe
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaGUI.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaModelo.dll
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaNegocio.dll
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaConexión.dll
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaModelo.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaNegocio.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaConexión.pdb
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.ActualizarCliente.resources
