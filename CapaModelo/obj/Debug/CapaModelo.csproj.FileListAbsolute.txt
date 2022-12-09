@@ -10,21 +10,9 @@ C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\bin\Debug\CapaModelo.dll
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\bin\Debug\CapaModelo.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.dll
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.pdb
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\bin\Debug\CapaModelo.dll
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\bin\Debug\CapaModelo.pdb
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.dll
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaModelo\obj\Debug\CapaModelo.pdb
-C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaModelo\bin\Debug\CapaModelo.dll
-C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaModelo\bin\Debug\CapaModelo.pdb
-C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaModelo\obj\Debug\CapaModelo.csprojAssemblyReference.cache
-C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
-C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaModelo\obj\Debug\CapaModelo.dll
-C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaModelo\obj\Debug\CapaModelo.pdb

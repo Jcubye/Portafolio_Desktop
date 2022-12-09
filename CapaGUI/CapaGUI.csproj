@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -49,18 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualizarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ActualizarCliente.Designer.cs">
-      <DependentUpon>ActualizarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListarProyectos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListarProyectos.Designer.cs">
-      <DependentUpon>ListarProyectos.cs</DependentUpon>
-    </Compile>
     <Compile Include="MantenedorAdministradores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,24 +70,6 @@
     <Compile Include="MantenedorClientes.Designer.cs">
       <DependentUpon>MantenedorClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorProfesional.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MantenedorProfesional.Designer.cs">
-      <DependentUpon>MantenedorProfesional.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MantenedorTrabajadores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MantenedorTrabajadores.Designer.cs">
-      <DependentUpon>MantenedorTrabajadores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NuevoProyecto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NuevoProyecto.Designer.cs">
-      <DependentUpon>NuevoProyecto.cs</DependentUpon>
-    </Compile>
     <Compile Include="PantallaAdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +81,12 @@
     </Compile>
     <Compile Include="PantallaContrato.Designer.cs">
       <DependentUpon>PantallaContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaFactura.Designer.cs">
+      <DependentUpon>PantallaFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaLogin.cs">
       <SubType>Form</SubType>
@@ -129,37 +108,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="prueba_portafolioDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="prueba_portafolioDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="prueba_portafolioDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>prueba_portafolioDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="prueba_portafolio_profesionalDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>prueba_portafolio_profesionalDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ActualizarCliente.resx">
-      <DependentUpon>ActualizarCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListarProyectos.resx">
-      <DependentUpon>ListarProyectos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorAdministradores.resx">
       <DependentUpon>MantenedorAdministradores.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,20 +122,14 @@
     <EmbeddedResource Include="MantenedorClientes.resx">
       <DependentUpon>MantenedorClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorProfesional.resx">
-      <DependentUpon>MantenedorProfesional.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorTrabajadores.resx">
-      <DependentUpon>MantenedorTrabajadores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NuevoProyecto.resx">
-      <DependentUpon>NuevoProyecto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PantallaAdminDashboard.resx">
       <DependentUpon>PantallaAdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaContrato.resx">
       <DependentUpon>PantallaContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaFactura.resx">
+      <DependentUpon>PantallaFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaLogin.resx">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
@@ -210,39 +157,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="prueba_portafolioDataSet.xsc">
-      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="prueba_portafolioDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>prueba_portafolioDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="prueba_portafolioDataSet.xss">
-      <DependentUpon>prueba_portafolioDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="prueba_portafolioDataSet1.xsc">
-      <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="prueba_portafolioDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>prueba_portafolioDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="prueba_portafolioDataSet1.xss">
-      <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="prueba_portafolioDataSet2.xsc">
-      <DependentUpon>prueba_portafolioDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="prueba_portafolioDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>prueba_portafolioDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="prueba_portafolioDataSet2.xss">
-      <DependentUpon>prueba_portafolioDataSet2.xsd</DependentUpon>
-    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
     <None Include="prueba_portafolio_profesionalDataSet.xsc">
       <DependentUpon>prueba_portafolio_profesionalDataSet.xsd</DependentUpon>
     </None>

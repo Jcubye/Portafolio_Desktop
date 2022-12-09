@@ -64,67 +64,13 @@ namespace CapaGUI
 
             }
 
-            try
-            {
-                string sURL;
-                sURL = "https://mindicador.cl/api/uf/" + DateTime.Today.ToString("MM-dd-yyyy");//30-11-2022";
-                //Console.WriteLine(sURL);
-                WebRequest wrGETURL;
-                wrGETURL = WebRequest.Create(sURL);
-                WebProxy myProxy = new WebProxy("myproxy", 80);
-                myProxy.BypassProxyOnLocal = true;
-                wrGETURL.Proxy = WebProxy.GetDefaultProxy();
-                Stream objStream;
-                objStream = wrGETURL.GetResponse().GetResponseStream();
-                StreamReader objReader = new StreamReader(objStream);
-                string sLine = "";
-                sLine = objReader.ReadLine();
-                //Console.WriteLine(sLine);
-                dynamic jsonObj = JsonConvert.DeserializeObject(sLine);
-                //Console.WriteLine(jsonObj);
-                var numero = jsonObj["serie"][0]["valor"];
-                ValorUF = numero;
-                
-                // Obtengo el directorio actual
-                string path = Directory.GetCurrentDirectory();
-                // Creo el fichero uf.txt y guardo mi variable
-                using (StreamWriter outputFile = new StreamWriter(path + "\\uf.txt")) {
-                    outputFile.WriteLine(ValorUF);
-                }
-            }
-            catch (Exception error)
-            {
-                string path = Directory.GetCurrentDirectory();
-                foreach (string line in System.IO.File.ReadLines(path + "\\uf.txt"))
-                {
-                    // System.Console.WriteLine(line + " kkk");
-                    ValorUF = Convert.ToDouble(line);
-                }
-                MessageBox.Show("Error en la respuesta de la api mindicador, procediendo con el ultimo valor UF guardado " + ValorUF , "Mensaje Sistema");
-                Console.WriteLine(error);
-     
-            }
+           
+            NegocioMindicador auxMin = new NegocioMindicador();
+            ValorUF = auxMin.consultaMindicador();
+
             radioButton1.Checked = true;
             txtUFvalue.Text = "$ " + ValorUF;
-            //TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
-            //double result_calculo = ((difFechas.Days / 30) * ValorUF);
-            //int producto;
-            //if (radioButton1.Checked)
-            //{
-            //    producto = 5;
-            //}
-            //else
-            //{
-            //    producto = 6;
-            //}
-            //if (difFechas.Days / 30 <= 1)
-            //{
-            //    txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo * producto;
-            //}
-            //else
-            //{
-            //    txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo * producto;
-            //}
+      
             calculate_string();
         }
 
@@ -170,27 +116,9 @@ namespace CapaGUI
         private void TimePickerInicio_ValueChanged(object sender, EventArgs e)
         {
             this.TimePickerFin.MinDate = this.TimePickerInicio.Value.AddMonths(1);//DateTime.Now.AddMonths(1);
-            //TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
-            //double result_calculo = ((difFechas.Days / 30) * ValorUF);
-            //int producto;
-            //if (radioButton1.Checked)
-            //{
-            //    producto = 5;
-            //}
-            //else
-            //{
-            //    producto = 6;
-            //}
-            //if (difFechas.Days / 30 <= 1)
-            //{
-            //    txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo * producto;
-            //}
-            //else
-            //{
-            //    txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo * producto;
-            //}
+           
             calculate_string();
-            //txtResultado.Text = "" + ((difFechas.Days / 30) * ValorUF);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -267,7 +195,7 @@ namespace CapaGUI
             auxCont.Fecha_termino = TimePickerFin.Value.ToString("yyyy/MM/dd");
             auxCont.Client_id = Convert.ToInt32(txtClientID.Text);
             NegocioContrato auxNegCont = new NegocioContrato();
-            int id_contrato = auxNegCont.insertarContrato(auxCont);
+            int id_contrato = auxNegCont.insertarContrato(auxCont); 
 
             CapaModelo.Servicio auxServ = new CapaModelo.Servicio();
             if (radioButton1.Checked)
@@ -295,25 +223,6 @@ namespace CapaGUI
 
         private void TimePickerFin_ValueChanged(object sender, EventArgs e)
         {
-            //txtResultado.Text = "" + Math.Abs((TimePickerFin.Value.Month - TimePickerInicio.Value.Month) + 12 * (TimePickerFin.Value.Year - TimePickerInicio.Value.Year));
-            //TimeSpan difFechas = TimePickerFin.Value - TimePickerInicio.Value;
-            //double result_calculo = ((difFechas.Days / 30) * ValorUF);
-            //int producto;
-            //if (radioButton1.Checked)
-            //{
-            //    producto = 5;
-            //}
-            //else {
-            //    producto = 6;
-            //}
-            //if (difFechas.Days / 30 <= 1)
-            //{
-            //    txtResultado.Text = difFechas.Days / 30 + " Mes de servicio por " + result_calculo * producto;
-            //}
-            //else
-            //{
-            //    txtResultado.Text = difFechas.Days / 30 + " Meses de servicio por " + result_calculo * producto;
-            //}
             calculate_string();
         }
 
