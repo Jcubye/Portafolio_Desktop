@@ -36,7 +36,17 @@ namespace CapaNegocio
         {
             this.configurarConexion();
             this.Conex.NombreTabla = "detalle_factura";
-            this.Conex.CadenaSQL = "select razon_social as 'Razon Social', estado,monto_total as 'Monto a pagar', fecha_emision as 'Fecha emision', fecha_vencimiento as 'Fecha vencimiento', descripcion, monto as 'Monto a pagado' from detalle_factura df join factura f on df.id = f.id join contrato c on df.contrato_id = c.id join cliente on c.cliente_id = cliente.id where f.fecha_pago IS NULL";
+            this.Conex.CadenaSQL = "select razon_social as 'Razon Social', estado,monto_total as 'Monto a pagar', fecha_emision as 'Fecha emision', fecha_vencimiento as 'Fecha vencimiento', descripcion, monto as 'Monto pagado' from detalle_factura df join factura f on df.id = f.id join contrato c on df.contrato_id = c.id join cliente on c.cliente_id = cliente.id where f.fecha_pago IS NULL AND f.fecha_vencimiento < GETDATE()";
+            this.Conex.EsSelect = true;
+            this.Conex.conectar();
+            return this.Conex.DbDataSet;
+        }
+
+        public DataSet consultaFacturas()
+        {
+            this.configurarConexion();
+            this.Conex.NombreTabla = "detalle_factura";
+            this.Conex.CadenaSQL = "select razon_social as 'Razon Social', estado,monto_total as 'Monto a pagar', fecha_emision as 'Fecha emision', fecha_vencimiento as 'Fecha vencimiento', descripcion, monto as 'Monto pagado' from detalle_factura df join factura f on df.id = f.id join contrato c on df.contrato_id = c.id join cliente on c.cliente_id = cliente.id";
             this.Conex.EsSelect = true;
             this.Conex.conectar();
             return this.Conex.DbDataSet;

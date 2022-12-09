@@ -72,6 +72,16 @@ namespace CapaNegocio
             return this.Conec.DbDataSet;
         }
 
+        public DataSet consultaContratoFiltrado(int client_id)
+        {
+            this.configurarConexion();
+            this.Conec.NombreTabla = "contrato";
+            this.Conec.CadenaSQL = "select id, detalle, fecha_inicio, fecha_termino from contrato where cliente_id = " + client_id;
+            this.Conec.EsSelect = true;
+            this.Conec.conectar();
+            return this.Conec.DbDataSet;
+        }
+
         //public void actualizarUsuario(Usuario user)
         //{
         //    this.configurarConexion();

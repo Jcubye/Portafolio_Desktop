@@ -126,6 +126,8 @@
   <ItemGroup>
     <Compile Include="Envio_correo.cs" />
     <Compile Include="NegocioContrato.cs" />
+    <Compile Include="NegocioFactura.cs" />
+    <Compile Include="NegocioMindicador.cs" />
     <Compile Include="NegocioProfesional.cs" />
     <Compile Include="NegocioReporteria.cs" />
     <Compile Include="NegocioServicio.cs" />
