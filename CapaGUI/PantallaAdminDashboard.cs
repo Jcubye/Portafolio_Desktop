@@ -56,6 +56,17 @@ namespace CapaGUI
 
             dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
             dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
+
+            NegocioReporteria negRep = new NegocioReporteria();
+            this.dataGridFacturas.DataSource = negRep.consultaFacturas();
+            this.dataGridFacturas.DataMember = "detalle_factura";
+            dataGridFacturas.Columns[0].HeaderText = "Razon Social";
+            dataGridFacturas.Columns[1].HeaderText = "Estado";
+            dataGridFacturas.Columns[2].HeaderText = "Monto a pagar";
+            dataGridFacturas.Columns[3].HeaderText = "Fecha emision";
+            dataGridFacturas.Columns[4].HeaderText = "Fecha vencimiento";
+            dataGridFacturas.Columns[5].HeaderText = "Descripcion";
+            dataGridFacturas.Columns[6].HeaderText = "Monto pagado";
         }
 
         private void salirToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -107,6 +118,21 @@ namespace CapaGUI
                 }
                 
             }
+
+            if (tabControl1.SelectedIndex == 5)
+            {
+                NegocioReporteria negRep = new NegocioReporteria();
+                this.dataGridFacturas.DataSource = negRep.consultaFacturas();
+                this.dataGridFacturas.DataMember = "detalle_factura";
+
+                if (this.dataGridFacturas.Rows.Count < 1)
+                {
+                    MessageBox.Show("No hay contratos a listar", "Ups!");
+                    //this.btnActualizar.Enabled = false;
+                }
+
+            }
+
             if (tabControl1.SelectedIndex == 8)
             {
                 if ((MessageBox.Show("¿Esta seguro de Salir?", "Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
@@ -114,6 +140,11 @@ namespace CapaGUI
                     this.Dispose();
                     System.GC.Collect();
                 }   
+            }
+            if (tabControl1.SelectedIndex == 9)
+            {
+                MantenedorAdministradores ma = new MantenedorAdministradores();
+                ma.ShowDialog();
             }
         }
 
@@ -157,6 +188,12 @@ namespace CapaGUI
             NegocioReporteria negRep = new NegocioReporteria();
             negRep.GenerarReporte(mydata, "RUBROS");
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PantallaFactura ma = new PantallaFactura();
+            ma.ShowDialog();
         }
     }
 }

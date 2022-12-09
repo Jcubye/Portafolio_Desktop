@@ -32,15 +32,6 @@ namespace CapaGUI
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorAdministradores));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesAsignadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fiscalizaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.accidentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtContra = new System.Windows.Forms.TextBox();
@@ -80,7 +71,7 @@ namespace CapaGUI
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Usuario_Admin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAdminBindingSource1)).BeginInit();
@@ -96,74 +87,6 @@ namespace CapaGUI
             ((System.ComponentModel.ISupportInitialize)(this.administradorBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAdminBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dashboardToolStripMenuItem,
-            this.clientesAsignadosToolStripMenuItem,
-            this.serviciosToolStripMenuItem,
-            this.solicitudesToolStripMenuItem,
-            this.fiscalizaciónToolStripMenuItem,
-            this.accidentesToolStripMenuItem,
-            this.salirToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // dashboardToolStripMenuItem
-            // 
-            this.dashboardToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.notificacionesToolStripMenuItem});
-            this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.dashboardToolStripMenuItem.Text = "Dashboard";
-            // 
-            // notificacionesToolStripMenuItem
-            // 
-            this.notificacionesToolStripMenuItem.Name = "notificacionesToolStripMenuItem";
-            this.notificacionesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.notificacionesToolStripMenuItem.Text = "Notificaciones";
-            // 
-            // clientesAsignadosToolStripMenuItem
-            // 
-            this.clientesAsignadosToolStripMenuItem.Name = "clientesAsignadosToolStripMenuItem";
-            this.clientesAsignadosToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
-            this.clientesAsignadosToolStripMenuItem.Text = "Clientes Asignados";
-            // 
-            // serviciosToolStripMenuItem
-            // 
-            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.serviciosToolStripMenuItem.Text = "Servicios";
-            // 
-            // solicitudesToolStripMenuItem
-            // 
-            this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.solicitudesToolStripMenuItem.Text = "Solicitudes";
-            // 
-            // fiscalizaciónToolStripMenuItem
-            // 
-            this.fiscalizaciónToolStripMenuItem.Name = "fiscalizaciónToolStripMenuItem";
-            this.fiscalizaciónToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.fiscalizaciónToolStripMenuItem.Text = "Fiscalización";
-            // 
-            // accidentesToolStripMenuItem
-            // 
-            this.accidentesToolStripMenuItem.Name = "accidentesToolStripMenuItem";
-            this.accidentesToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.accidentesToolStripMenuItem.Text = "Accidentes";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // label2
             // 
@@ -458,12 +381,24 @@ namespace CapaGUI
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(317, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(152, 13);
+            this.label3.TabIndex = 110;
+            this.label3.Text = "Agregar Administradores :";
+            // 
             // MantenedorAdministradores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnIngresar);
@@ -490,13 +425,10 @@ namespace CapaGUI
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MantenedorAdministradores";
             this.Text = "Administradores";
             this.Load += new System.EventHandler(this.MantenedorAdministradores_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Usuario_Admin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAdminBindingSource1)).EndInit();
@@ -517,16 +449,6 @@ namespace CapaGUI
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dashboardToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem notificacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesAsignadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem solicitudesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fiscalizaciónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem accidentesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtContra;
@@ -566,5 +488,6 @@ namespace CapaGUI
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label label3;
     }
 }

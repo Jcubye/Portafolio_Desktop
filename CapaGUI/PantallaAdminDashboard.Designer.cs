@@ -29,6 +29,7 @@ namespace CapaGUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaAdminDashboard));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -43,24 +44,30 @@ namespace CapaGUI
             this.dataGridContratos = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnDeudores = new System.Windows.Forms.Button();
-            this.btnReportClient = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnReportClient = new System.Windows.Forms.Button();
+            this.btnDeudores = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dataGridFacturas = new System.Windows.Forms.DataGridView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContratos)).BeginInit();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFacturas)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -74,6 +81,7 @@ namespace CapaGUI
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
+            this.tabControl1.Controls.Add(this.tabPage10);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(1, 3);
             this.tabControl1.Name = "tabControl1";
@@ -223,16 +231,6 @@ namespace CapaGUI
             this.tabPage5.Text = "Actividades";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1166, 580);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Finanzas";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
             // tabPage7
             // 
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
@@ -261,75 +259,15 @@ namespace CapaGUI
             this.tabPage8.Text = "Reportes";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // tabPage9
+            // button3
             // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 25);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1166, 580);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Salir";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(269, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Reporte de deudores :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(269, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(217, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Reporte de clientes nuevos :";
-            // 
-            // btnDeudores
-            // 
-            this.btnDeudores.Location = new System.Drawing.Point(503, 98);
-            this.btnDeudores.Name = "btnDeudores";
-            this.btnDeudores.Size = new System.Drawing.Size(87, 23);
-            this.btnDeudores.TabIndex = 3;
-            this.btnDeudores.Text = "Guardar ";
-            this.btnDeudores.UseVisualStyleBackColor = true;
-            this.btnDeudores.Click += new System.EventHandler(this.btnDeudores_Click);
-            // 
-            // btnReportClient
-            // 
-            this.btnReportClient.Location = new System.Drawing.Point(503, 162);
-            this.btnReportClient.Name = "btnReportClient";
-            this.btnReportClient.Size = new System.Drawing.Size(87, 23);
-            this.btnReportClient.TabIndex = 4;
-            this.btnReportClient.Text = "Guardar ";
-            this.btnReportClient.UseVisualStyleBackColor = true;
-            this.btnReportClient.Click += new System.EventHandler(this.btnReportClient_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(269, 229);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(229, 17);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Reporte de clientes inactivos :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(269, 298);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Rubros :";
+            this.button3.Location = new System.Drawing.Point(503, 298);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(87, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Guardar ";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -341,15 +279,126 @@ namespace CapaGUI
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button3
+            // label6
             // 
-            this.button3.Location = new System.Drawing.Point(503, 298);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Guardar ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(269, 298);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 17);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Rubros :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(269, 229);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(229, 17);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Reporte de clientes inactivos :";
+            // 
+            // btnReportClient
+            // 
+            this.btnReportClient.Location = new System.Drawing.Point(503, 162);
+            this.btnReportClient.Name = "btnReportClient";
+            this.btnReportClient.Size = new System.Drawing.Size(87, 23);
+            this.btnReportClient.TabIndex = 4;
+            this.btnReportClient.Text = "Guardar ";
+            this.btnReportClient.UseVisualStyleBackColor = true;
+            this.btnReportClient.Click += new System.EventHandler(this.btnReportClient_Click);
+            // 
+            // btnDeudores
+            // 
+            this.btnDeudores.Location = new System.Drawing.Point(503, 98);
+            this.btnDeudores.Name = "btnDeudores";
+            this.btnDeudores.Size = new System.Drawing.Size(87, 23);
+            this.btnDeudores.TabIndex = 3;
+            this.btnDeudores.Text = "Guardar ";
+            this.btnDeudores.UseVisualStyleBackColor = true;
+            this.btnDeudores.Click += new System.EventHandler(this.btnDeudores_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(269, 162);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(217, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Reporte de clientes nuevos :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(269, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Reporte de deudores :";
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Salir";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Administradores";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(439, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 20);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Facturas emitidas";
+            // 
+            // dataGridFacturas
+            // 
+            this.dataGridFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridFacturas.Location = new System.Drawing.Point(176, 88);
+            this.dataGridFacturas.Name = "dataGridFacturas";
+            this.dataGridFacturas.Size = new System.Drawing.Size(799, 335);
+            this.dataGridFacturas.TabIndex = 3;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.button4);
+            this.tabPage6.Controls.Add(this.dataGridFacturas);
+            this.tabPage6.Controls.Add(this.label7);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1166, 580);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Finanzas";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button4.Location = new System.Drawing.Point(862, 495);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(113, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Emitir Factura";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // PantallaAdminDashboard
             // 
@@ -357,6 +406,7 @@ namespace CapaGUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1176, 610);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "PantallaAdminDashboard";
@@ -372,6 +422,9 @@ namespace CapaGUI
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContratos)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFacturas)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -384,7 +437,6 @@ namespace CapaGUI
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
@@ -404,5 +456,10 @@ namespace CapaGUI
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView dataGridFacturas;
+        private System.Windows.Forms.Label label7;
     }
 }
