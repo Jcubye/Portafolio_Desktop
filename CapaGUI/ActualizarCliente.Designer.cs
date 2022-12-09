@@ -46,12 +46,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cmbComuna = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmbRegion = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnProyectos = new System.Windows.Forms.Button();
+            this.btnTrabajadores = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtEstadoAC
             // 
             this.txtEstadoAC.Enabled = false;
-            this.txtEstadoAC.Location = new System.Drawing.Point(283, 323);
+            this.txtEstadoAC.Location = new System.Drawing.Point(283, 392);
             this.txtEstadoAC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEstadoAC.MaxLength = 50;
             this.txtEstadoAC.Name = "txtEstadoAC";
@@ -64,7 +70,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(206, 323);
+            this.label1.Location = new System.Drawing.Point(206, 392);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 166;
@@ -93,7 +99,7 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnActualizar.Location = new System.Drawing.Point(158, 376);
+            this.btnActualizar.Location = new System.Drawing.Point(158, 445);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(135, 48);
@@ -111,7 +117,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnSalir.Location = new System.Drawing.Point(379, 376);
+            this.btnSalir.Location = new System.Drawing.Point(379, 445);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(135, 48);
@@ -126,7 +132,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(279, 286);
+            this.label11.Location = new System.Drawing.Point(279, 355);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 17);
             this.label11.TabIndex = 162;
@@ -135,12 +141,13 @@
             // 
             // txtTelefonoAC
             // 
-            this.txtTelefonoAC.Location = new System.Drawing.Point(316, 281);
+            this.txtTelefonoAC.Location = new System.Drawing.Point(316, 350);
             this.txtTelefonoAC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefonoAC.MaxLength = 9;
             this.txtTelefonoAC.Name = "txtTelefonoAC";
             this.txtTelefonoAC.Size = new System.Drawing.Size(145, 22);
             this.txtTelefonoAC.TabIndex = 161;
+            this.txtTelefonoAC.Text = "Ej: 952892688";
             // 
             // label14
             // 
@@ -148,7 +155,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(192, 285);
+            this.label14.Location = new System.Drawing.Point(192, 354);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(77, 17);
             this.label14.TabIndex = 160;
@@ -158,12 +165,13 @@
             // txtDireccionAC
             // 
             this.txtDireccionAC.Enabled = false;
-            this.txtDireccionAC.Location = new System.Drawing.Point(286, 241);
+            this.txtDireccionAC.Location = new System.Drawing.Point(286, 310);
             this.txtDireccionAC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDireccionAC.MaxLength = 50;
             this.txtDireccionAC.Name = "txtDireccionAC";
             this.txtDireccionAC.Size = new System.Drawing.Size(221, 22);
             this.txtDireccionAC.TabIndex = 159;
+            this.txtDireccionAC.Text = "Ej: Calle siempreviva 132";
             // 
             // txtRSocialAC
             // 
@@ -173,6 +181,7 @@
             this.txtRSocialAC.Name = "txtRSocialAC";
             this.txtRSocialAC.Size = new System.Drawing.Size(176, 22);
             this.txtRSocialAC.TabIndex = 158;
+            this.txtRSocialAC.Text = "Ej: Walmart SA";
             // 
             // txtClaveAC
             // 
@@ -182,6 +191,7 @@
             this.txtClaveAC.Name = "txtClaveAC";
             this.txtClaveAC.Size = new System.Drawing.Size(176, 22);
             this.txtClaveAC.TabIndex = 157;
+            this.txtClaveAC.Text = "Ej: clave123";
             // 
             // txtCorreoAC
             // 
@@ -191,6 +201,7 @@
             this.txtCorreoAC.Name = "txtCorreoAC";
             this.txtCorreoAC.Size = new System.Drawing.Size(176, 22);
             this.txtCorreoAC.TabIndex = 156;
+            this.txtCorreoAC.Text = "Ej; hola@gmail.com";
             // 
             // txtRutAC
             // 
@@ -209,7 +220,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(191, 241);
+            this.label9.Location = new System.Drawing.Point(191, 310);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(81, 17);
             this.label9.TabIndex = 154;
@@ -268,12 +279,106 @@
             this.label2.Text = "Rut:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // cmbComuna
+            // 
+            this.cmbComuna.FormattingEnabled = true;
+            this.cmbComuna.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo",
+            "Suspendido"});
+            this.cmbComuna.Location = new System.Drawing.Point(286, 273);
+            this.cmbComuna.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbComuna.Name = "cmbComuna";
+            this.cmbComuna.Size = new System.Drawing.Size(145, 24);
+            this.cmbComuna.TabIndex = 171;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(202, 277);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(71, 17);
+            this.label13.TabIndex = 170;
+            this.label13.Text = "Comuna:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cmbRegion
+            // 
+            this.cmbRegion.FormattingEnabled = true;
+            this.cmbRegion.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo",
+            "Suspendido"});
+            this.cmbRegion.Location = new System.Drawing.Point(286, 238);
+            this.cmbRegion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbRegion.Name = "cmbRegion";
+            this.cmbRegion.Size = new System.Drawing.Size(145, 24);
+            this.cmbRegion.TabIndex = 169;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(208, 241);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 17);
+            this.label7.TabIndex = 168;
+            this.label7.Text = "Región:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnProyectos
+            // 
+            this.btnProyectos.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnProyectos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnProyectos.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnProyectos.FlatAppearance.BorderSize = 0;
+            this.btnProyectos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProyectos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProyectos.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnProyectos.Location = new System.Drawing.Point(113, 527);
+            this.btnProyectos.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnProyectos.Name = "btnProyectos";
+            this.btnProyectos.Size = new System.Drawing.Size(180, 36);
+            this.btnProyectos.TabIndex = 172;
+            this.btnProyectos.Text = "Proyectos +";
+            this.btnProyectos.UseVisualStyleBackColor = false;
+            this.btnProyectos.Click += new System.EventHandler(this.btnProyectos_Click);
+            // 
+            // btnTrabajadores
+            // 
+            this.btnTrabajadores.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnTrabajadores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTrabajadores.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnTrabajadores.FlatAppearance.BorderSize = 0;
+            this.btnTrabajadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrabajadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrabajadores.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnTrabajadores.Location = new System.Drawing.Point(379, 527);
+            this.btnTrabajadores.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnTrabajadores.Name = "btnTrabajadores";
+            this.btnTrabajadores.Size = new System.Drawing.Size(180, 36);
+            this.btnTrabajadores.TabIndex = 173;
+            this.btnTrabajadores.Text = "Trabajadores +";
+            this.btnTrabajadores.UseVisualStyleBackColor = false;
+            this.btnTrabajadores.Click += new System.EventHandler(this.btnTrabajadores_Click);
+            // 
             // ActualizarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(662, 450);
+            this.ClientSize = new System.Drawing.Size(662, 598);
+            this.Controls.Add(this.btnTrabajadores);
+            this.Controls.Add(this.btnProyectos);
+            this.Controls.Add(this.cmbComuna);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.cmbRegion);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtEstadoAC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
@@ -319,5 +424,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbComuna;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cmbRegion;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnProyectos;
+        private System.Windows.Forms.Button btnTrabajadores;
     }
 }

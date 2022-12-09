@@ -38,7 +38,7 @@ namespace CapaGUI
             this.txtTelefono.Clear();
             this.cmbComuna.SelectedIndex = 0;
             this.cmbRegion.SelectedIndex = 0;
-            this.cmbRubro.SelectedIndex = 0;
+            //this.cmbRubro.SelectedIndex = 0;
             this.cmbEstado.SelectedIndex = 0;
         }   
 
@@ -63,8 +63,8 @@ namespace CapaGUI
                         FechaCreacion = DateTime.Parse(this.txtFechaNac.Text),
                         Comuna = auxNegocio.obtenerIdComuna(this.cmbComuna.Text),//se necesita obtener id
                         RazonSocial = this.txtRSocial.Text,
-                        Estado = this.cmbEstado.Text,
-                        Rubro = auxNegocio.obtnerIdRubro(this.cmbRubro.Text)//se necesita obtener id
+                        Estado = this.cmbEstado.Text
+                        //Rubro = auxNegocio.obtnerIdRubro(this.cmbRubro.Text)//se necesita obtener id
                     };
 
                     //validar rut 
@@ -80,6 +80,15 @@ namespace CapaGUI
                             auxNegocio.insertarCliente(auxCliente2);
                             MessageBox.Show("Datos guardados", "Mensaje de sistema");
                             this.limpiar();
+                            if ((MessageBox.Show("¿Desea agregar un proyecto de inmediato?", "Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
+                            {
+                                NuevoProyecto newp = new NuevoProyecto();
+                                newp.ShowDialog();
+                            }
+                            else
+                            {
+                                this.btnSalir_Click(sender, e);//arreglar evento de cancelar
+                            }
                         }
                         else
                         {
@@ -119,16 +128,16 @@ namespace CapaGUI
             this.cmbRegion.DisplayMember = "nombre";
 
             //carga combobox con lista de rubros
-            NegocioRubro auxNegR = new NegocioRubro();
-            this.cmbRubro.DataSource = auxNegR.consultaRubro().Tables[0];
-            this.cmbRubro.DisplayMember = "nombre";
+            //NegocioRubro auxNegR = new NegocioRubro();
+            //this.cmbRubro.DataSource = auxNegR.consultaRubro().Tables[0];
+            //this.cmbRubro.DisplayMember = "nombre";
 
             //texto fijo
-            this.txtRubro.ReadOnly = true;
+            //this.txtRubro.ReadOnly = true;
             this.cmbRegion.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cmbComuna.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cmbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.cmbRubro.DropDownStyle = ComboBoxStyle.DropDownList;
+            //this.cmbRubro.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void cmbRegion_SelectedIndexChanged(object sender, EventArgs e)
@@ -146,7 +155,7 @@ namespace CapaGUI
         private void cmbRubro_SelectedIndexChanged(object sender, EventArgs e)
         {
             NegocioRubro auxNegR = new NegocioRubro();
-            this.txtRubro.Text = auxNegR.ObtenerDescRubro(this.cmbRubro.Text);
+            //this.txtRubro.Text = auxNegR.ObtenerDescRubro(this.cmbRubro.Text);
         }
 
         //metodo para validar rut

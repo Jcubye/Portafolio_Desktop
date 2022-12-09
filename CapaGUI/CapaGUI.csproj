@@ -55,6 +55,12 @@
     <Compile Include="ActualizarCliente.Designer.cs">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarProyectos.Designer.cs">
+      <DependentUpon>ListarProyectos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorAdministradores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,18 @@
     </Compile>
     <Compile Include="MantenedorProfesional.Designer.cs">
       <DependentUpon>MantenedorProfesional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorTrabajadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorTrabajadores.Designer.cs">
+      <DependentUpon>MantenedorTrabajadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoProyecto.Designer.cs">
+      <DependentUpon>NuevoProyecto.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaAdminDashboard.cs">
       <SubType>Form</SubType>
@@ -126,6 +144,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="prueba_portafolioDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prueba_portafolioDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="prueba_portafolio_profesionalDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,6 +156,9 @@
     </Compile>
     <EmbeddedResource Include="ActualizarCliente.resx">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarProyectos.resx">
+      <DependentUpon>ListarProyectos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorAdministradores.resx">
       <DependentUpon>MantenedorAdministradores.cs</DependentUpon>
@@ -145,6 +171,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProfesional.resx">
       <DependentUpon>MantenedorProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorTrabajadores.resx">
+      <DependentUpon>MantenedorTrabajadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoProyecto.resx">
+      <DependentUpon>NuevoProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaAdminDashboard.resx">
       <DependentUpon>PantallaAdminDashboard.cs</DependentUpon>
@@ -199,6 +231,17 @@
     </None>
     <None Include="prueba_portafolioDataSet1.xss">
       <DependentUpon>prueba_portafolioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="prueba_portafolioDataSet2.xsc">
+      <DependentUpon>prueba_portafolioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="prueba_portafolioDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prueba_portafolioDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prueba_portafolioDataSet2.xss">
+      <DependentUpon>prueba_portafolioDataSet2.xsd</DependentUpon>
     </None>
     <None Include="prueba_portafolio_profesionalDataSet.xsc">
       <DependentUpon>prueba_portafolio_profesionalDataSet.xsd</DependentUpon>

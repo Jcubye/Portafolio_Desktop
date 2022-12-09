@@ -52,5 +52,18 @@ namespace CapaGUI
             this.Dispose();
             System.GC.Collect();
         }
+
+        private void btnProyectos_Click(object sender, EventArgs e)
+        {
+            NuevoProyecto npr = new NuevoProyecto();
+            npr.txtRespaldoIdcliente.Text = this.txtRSocialAC.Text;
+            npr.ShowDialog();
+        }
+
+        private void btnTrabajadores_Click(object sender, EventArgs e)
+        {
+            MantenedorTrabajadores mt = new MantenedorTrabajadores();
+            mt.ShowDialog();
+        }
     }
 }

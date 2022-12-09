@@ -46,7 +46,6 @@ namespace CapaNegocio
             cmd.Parameters.AddWithValue("@comuna_id", cliente.Comuna);
             cmd.Parameters.AddWithValue("@razon_social", cliente.RazonSocial);
             cmd.Parameters.AddWithValue("@estado", cliente.Estado);
-            cmd.Parameters.AddWithValue("@rubro_id", cliente.Rubro);
 
             try
             {
@@ -217,6 +216,19 @@ namespace CapaNegocio
                                    + "estado = 'Activo' WHERE usuarios_id = (SELECT id from usuarios where rut = '" + rut + "');";
             this.Conex.EsSelect = false;
             this.Conex.conectar();
+        }
+
+        public int obtnerIdCliente(String razonSocial)
+        {
+            this.configurarConexion();
+            this.Conex.NombreTabla = "cliente";
+            this.Conex.CadenaSQL = "SELECT id FROM prueba_portafolio.dbo.cliente WHERE razon_social = '" + razonSocial + "'";
+            this.Conex.EsSelect = true;
+            this.Conex.conectar();
+            DataTable dt = new DataTable();
+            dt = this.Conex.DbDataSet.Tables[0];
+
+            return (int)dt.Rows[0]["id"];
         }
     }
 }

@@ -33,6 +33,7 @@ namespace CapaGUI
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -63,7 +64,6 @@ namespace CapaGUI
             this.prueba_portafolio_profesionalDataSet = new CapaGUI.prueba_portafolio_profesionalDataSet();
             this.profesionalTableAdapter = new CapaGUI.prueba_portafolio_profesionalDataSetTableAdapters.profesionalTableAdapter();
             this.profesionalTableAdapter1 = new CapaGUI.prueba_portafolioDataSet1TableAdapters.profesionalTableAdapter();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -127,6 +127,18 @@ namespace CapaGUI
             this.tabPage2.Text = "Clientes";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(1361, 50);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(147, 39);
+            this.btnRefresh.TabIndex = 4;
+            this.btnRefresh.Text = "Refrescar";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,10 +165,13 @@ namespace CapaGUI
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(37, 140);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1471, 443);
             this.dataGridView1.TabIndex = 1;
@@ -419,18 +434,6 @@ namespace CapaGUI
             // profesionalTableAdapter1
             // 
             this.profesionalTableAdapter1.ClearBeforeFill = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(1361, 50);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(147, 39);
-            this.btnRefresh.TabIndex = 4;
-            this.btnRefresh.Text = "Refrescar";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // PantallaAdminDashboard
             // 

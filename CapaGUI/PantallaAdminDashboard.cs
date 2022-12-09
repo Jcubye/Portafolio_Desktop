@@ -32,8 +32,9 @@ namespace CapaGUI
             dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Modificar", UseColumnTextForButtonValue = true });
             dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
             dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
+            dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Proyectos", Text = "Ver", UseColumnTextForButtonValue = true });
 
-            
+
 
             CapaNegocio.NegocioContrato auxContrato = new CapaNegocio.NegocioContrato();
             this.dataGridContratos.DataSource = auxContrato.consultaContrato();
@@ -48,11 +49,11 @@ namespace CapaGUI
             dataGridContratos.Columns[5].HeaderText = "Razon social";
             dataGridContratos.Columns[6].HeaderText = "Estado";
             dataGridContratos.Columns[7].HeaderText = "Usuario id";
-            dataGridContratos.Columns[8].HeaderText = "Rubro id";
+            //dataGridContratos.Columns[8].HeaderText = "Rubro id";
             dataGridContratos.Columns[0].Visible = false;
             dataGridContratos.Columns[4].Visible = false;
             dataGridContratos.Columns[7].Visible = false;
-            dataGridContratos.Columns[8].Visible = false;
+            //dataGridContratos.Columns[8].Visible = false;
 
             dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
             dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
@@ -143,9 +144,9 @@ namespace CapaGUI
             DataGridViewRow row = this.dataGridView1.CurrentRow;
             if (e.ColumnIndex == 1)
             {
-                if((String)row.Cells[9].Value == "Activo")
+                if((String)row.Cells[10].Value == "Activo")
                 {
-                    String rut = (String)row.Cells[5].Value;
+                    String rut = (String)row.Cells[6].Value;
                     NegocioCliente nc = new NegocioCliente();
                     nc.suspenderCliente(rut);
                     MessageBox.Show("Cliente suspendido");
@@ -161,21 +162,21 @@ namespace CapaGUI
                 //MessageBox.Show("Modificar");
                 ActualizarCliente ac = new ActualizarCliente();
 
-                ac.txtCorreoAC.Text = (String)row.Cells[3].Value;
-                ac.txtClaveAC.Text = (String)row.Cells[4].Value;
-                ac.txtRutAC.Text = (String)row.Cells[5].Value;
-                ac.txtDireccionAC.Text = (String)row.Cells[6].Value;
-                ac.txtTelefonoAC.Text = Convert.ToString((int)row.Cells[7].Value);
-                ac.txtRSocialAC.Text = (String)row.Cells[8].Value;
-                ac.txtEstadoAC.Text = (String)row.Cells[9].Value;
+                ac.txtCorreoAC.Text = (String)row.Cells[4].Value;
+                ac.txtClaveAC.Text = (String)row.Cells[5].Value;
+                ac.txtRutAC.Text = (String)row.Cells[6].Value;
+                ac.txtDireccionAC.Text = (String)row.Cells[7].Value;
+                ac.txtTelefonoAC.Text = (String)row.Cells[8].Value;
+                ac.txtRSocialAC.Text = (String)row.Cells[9].Value;
+                ac.txtEstadoAC.Text = (String)row.Cells[10].Value;
 
                 ac.Show();
             }
             if (e.ColumnIndex == 2)
             {
-                if ((String)row.Cells[9].Value == "Suspendido")
+                if ((String)row.Cells[10].Value == "Suspendido")
                 {
-                    String rut = (String)row.Cells[5].Value;
+                    String rut = (String)row.Cells[6].Value;
                     NegocioCliente nc = new NegocioCliente();
                     nc.activarCliente(rut);
                     MessageBox.Show("Cliente activo");
@@ -185,6 +186,14 @@ namespace CapaGUI
                 {
                     MessageBox.Show("Cliente ya se encuentra activo");
                 }
+            }
+            if (e.ColumnIndex == 3)
+            {
+                //MessageBox.Show("Proyectos");
+                ListarProyectos lp = new ListarProyectos();
+                lp.txtAux.Text = (String)row.Cells[9].Value;
+                lp.Show();
+                //ac.Show();
             }
         }
 

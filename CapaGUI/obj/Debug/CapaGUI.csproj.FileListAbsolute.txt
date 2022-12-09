@@ -132,3 +132,6 @@ C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version fina
 C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\bin\Debug\CapaConexión.pdb
 C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
 C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.ActualizarCliente.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.NuevoProyecto.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.MantenedorTrabajadores.resources
+C:\Users\Jaimeme\Desktop\Duoc\2022\Segundo semestre 2022\Portafolio\Version final\Nueva carpeta (2)\Portafolio_Desktop\CapaGUI\obj\Debug\CapaGUI.ListarProyectos.resources
