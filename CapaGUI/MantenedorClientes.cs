@@ -127,11 +127,6 @@ namespace CapaGUI
             this.cmbRegion.DataSource = auxNeg.consultaRegion().Tables[0];
             this.cmbRegion.DisplayMember = "nombre";
 
-            //carga combobox con lista de rubros
-            //NegocioRubro auxNegR = new NegocioRubro();
-            //this.cmbRubro.DataSource = auxNegR.consultaRubro().Tables[0];
-            //this.cmbRubro.DisplayMember = "nombre";
-
             //texto fijo
             //this.txtRubro.ReadOnly = true;
             this.cmbRegion.DropDownStyle = ComboBoxStyle.DropDownList;

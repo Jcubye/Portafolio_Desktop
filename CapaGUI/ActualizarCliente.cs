@@ -65,5 +65,10 @@ namespace CapaGUI
             MantenedorTrabajadores mt = new MantenedorTrabajadores();
             mt.ShowDialog();
         }
+
+        private void ActualizarCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

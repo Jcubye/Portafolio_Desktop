@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbProyecto = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAux = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,21 +36,9 @@
             this.gridViewTrabajadores = new System.Windows.Forms.DataGridView();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.cmbProyec = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTrabajadores)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cmbProyecto
-            // 
-            this.cmbProyecto.FormattingEnabled = true;
-            this.cmbProyecto.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo",
-            "Suspendido"});
-            this.cmbProyecto.Location = new System.Drawing.Point(295, 71);
-            this.cmbProyecto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbProyecto.Name = "cmbProyecto";
-            this.cmbProyecto.Size = new System.Drawing.Size(145, 24);
-            this.cmbProyecto.TabIndex = 120;
             // 
             // label1
             // 
@@ -153,12 +140,22 @@
             this.label12.Text = "Lista de proyectos";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // cmbProyec
+            // 
+            this.cmbProyec.FormattingEnabled = true;
+            this.cmbProyec.Location = new System.Drawing.Point(295, 74);
+            this.cmbProyec.Name = "cmbProyec";
+            this.cmbProyec.Size = new System.Drawing.Size(218, 24);
+            this.cmbProyec.TabIndex = 139;
+            this.cmbProyec.SelectedIndexChanged += new System.EventHandler(this.cmbProyec_SelectedIndexChanged);
+            // 
             // ListarProyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(857, 544);
+            this.Controls.Add(this.cmbProyec);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.gridViewTrabajadores);
@@ -166,7 +163,6 @@
             this.Controls.Add(this.txtDescProyecto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAux);
-            this.Controls.Add(this.cmbProyecto);
             this.Controls.Add(this.label1);
             this.Name = "ListarProyectos";
             this.Text = "Proyectos";
@@ -178,8 +174,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmbProyecto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDescProyecto;
@@ -188,5 +182,6 @@
         private System.Windows.Forms.Button btnSalir;
         public System.Windows.Forms.TextBox txtAux;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbProyec;
     }
 }
