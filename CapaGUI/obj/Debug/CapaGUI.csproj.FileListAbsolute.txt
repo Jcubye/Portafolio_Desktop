@@ -113,3 +113,4 @@ C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Sys
 C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Buffers.xml
 C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaFactura.resources
