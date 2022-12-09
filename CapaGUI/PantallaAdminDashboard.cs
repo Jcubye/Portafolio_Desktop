@@ -146,6 +146,72 @@ namespace CapaGUI
                 MantenedorAdministradores ma = new MantenedorAdministradores();
                 ma.ShowDialog();
             }
+            //dataGridContratos.Columns[8].Visible = false;
+
+            dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
+            dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
+        }
+
+        private void salirToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            System.GC.Collect(); 
+        }
+
+        private void PantallaAdminDashboard_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'prueba_portafolioDataSet1.profesional' Puede moverla o quitarla según sea necesario.
+            // descomentar al entregar this.profesionalTableAdapter1.Fill(this.prueba_portafolioDataSet1.profesional);
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MantenedorClientes mc = new MantenedorClientes();
+            mc.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            if (tabControl1.SelectedIndex == 1) {
+                CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
+                this.dataGridView1.DataSource = auxNeg.consultaCliente();
+                this.dataGridView1.DataMember = "usuarios";
+
+                if (this.dataGridView1.Rows.Count < 1)
+                {
+                    MessageBox.Show("No hay clientes a listar", "Ups!");
+                    //this.btnActualizar.Enabled = false;
+                }
+               
+            }
+            if (tabControl1.SelectedIndex == 3)
+            {
+                CapaNegocio.NegocioContrato auxContrato = new CapaNegocio.NegocioContrato();
+                this.dataGridContratos.DataSource = auxContrato.consultaContrato();
+                this.dataGridContratos.DataMember = "contrato";
+
+                if (this.dataGridContratos.Rows.Count < 1)
+                {
+                    MessageBox.Show("No hay contratos a listar", "Ups!");
+                    //this.btnActualizar.Enabled = false;
+                }
+                
+            }
+            if (tabControl1.SelectedIndex == 8)
+            {
+                if ((MessageBox.Show("¿Esta seguro de Salir?", "Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
+                {
+                    this.Dispose();
+                    System.GC.Collect();
+                }   
+            }
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -178,6 +244,8 @@ namespace CapaGUI
             NegocioReporteria negRep = new NegocioReporteria();
             negRep.GenerarReporte(mydata, "CLIENTES ACTIVOS");
 
+            MantenedorProfesional mp = new MantenedorProfesional();
+            mp.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
