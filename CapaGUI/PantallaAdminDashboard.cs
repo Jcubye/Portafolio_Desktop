@@ -32,9 +32,8 @@ namespace CapaGUI
             dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Modificar", UseColumnTextForButtonValue = true });
             dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
             dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
-            dataGridView1.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Proyectos", Text = "Ver", UseColumnTextForButtonValue = true });
 
-
+            
 
             CapaNegocio.NegocioContrato auxContrato = new CapaNegocio.NegocioContrato();
             this.dataGridContratos.DataSource = auxContrato.consultaContrato();
@@ -49,14 +48,25 @@ namespace CapaGUI
             dataGridContratos.Columns[5].HeaderText = "Razon social";
             dataGridContratos.Columns[6].HeaderText = "Estado";
             dataGridContratos.Columns[7].HeaderText = "Usuario id";
-            //dataGridContratos.Columns[8].HeaderText = "Rubro id";
+            dataGridContratos.Columns[8].HeaderText = "Rubro id";
             dataGridContratos.Columns[0].Visible = false;
             dataGridContratos.Columns[4].Visible = false;
             dataGridContratos.Columns[7].Visible = false;
-            //dataGridContratos.Columns[8].Visible = false;
+            dataGridContratos.Columns[8].Visible = false;
 
             dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "Acciones", Text = "Suspender", UseColumnTextForButtonValue = true });
             dataGridContratos.Columns.Add(new DataGridViewButtonColumn() { HeaderText = "", Text = "Activar", UseColumnTextForButtonValue = true });
+
+            NegocioReporteria negRep = new NegocioReporteria();
+            this.dataGridFacturas.DataSource = negRep.consultaFacturas();
+            this.dataGridFacturas.DataMember = "detalle_factura";
+            dataGridFacturas.Columns[0].HeaderText = "Razon Social";
+            dataGridFacturas.Columns[1].HeaderText = "Estado";
+            dataGridFacturas.Columns[2].HeaderText = "Monto a pagar";
+            dataGridFacturas.Columns[3].HeaderText = "Fecha emision";
+            dataGridFacturas.Columns[4].HeaderText = "Fecha vencimiento";
+            dataGridFacturas.Columns[5].HeaderText = "Descripcion";
+            dataGridFacturas.Columns[6].HeaderText = "Monto pagado";
         }
 
         private void salirToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -67,10 +77,7 @@ namespace CapaGUI
 
         private void PantallaAdminDashboard_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'prueba_portafolioDataSet1.profesional' Puede moverla o quitarla según sea necesario.
-            // descomentar al entregar this.profesionalTableAdapter1.Fill(this.prueba_portafolioDataSet1.profesional);
-
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -111,6 +118,21 @@ namespace CapaGUI
                 }
                 
             }
+
+            if (tabControl1.SelectedIndex == 5)
+            {
+                NegocioReporteria negRep = new NegocioReporteria();
+                this.dataGridFacturas.DataSource = negRep.consultaFacturas();
+                this.dataGridFacturas.DataMember = "detalle_factura";
+
+                if (this.dataGridFacturas.Rows.Count < 1)
+                {
+                    MessageBox.Show("No hay contratos a listar", "Ups!");
+                    //this.btnActualizar.Enabled = false;
+                }
+
+            }
+
             if (tabControl1.SelectedIndex == 8)
             {
                 if ((MessageBox.Show("¿Esta seguro de Salir?", "Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
@@ -118,6 +140,11 @@ namespace CapaGUI
                     this.Dispose();
                     System.GC.Collect();
                 }   
+            }
+            if (tabControl1.SelectedIndex == 9)
+            {
+                MantenedorAdministradores ma = new MantenedorAdministradores();
+                ma.ShowDialog();
             }
         }
 
@@ -127,81 +154,46 @@ namespace CapaGUI
             mc.ShowDialog();
         }
 
+        private void btnDeudores_Click(object sender, EventArgs e)
+        {
+            NegocioReporteria negRep = new NegocioReporteria();
+            DataSet mydata = negRep.consultaFacturasPendientes();
+            negRep.GenerarReporte(mydata,"DEUDORES");
+        }
+
+        private void btnReportClient_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
+            DataSet mydata = auxNeg.consultaCliente();
+
+            NegocioReporteria negRep = new NegocioReporteria();
+            negRep.GenerarReporte(mydata,"CLIENTES");
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
+            CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
+            DataSet mydata = auxNeg.consultaCliente();
 
-            MantenedorProfesional mp = new MantenedorProfesional();
-            mp.ShowDialog();
+            NegocioReporteria negRep = new NegocioReporteria();
+            negRep.GenerarReporte(mydata, "CLIENTES ACTIVOS");
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            CapaNegocio.NegocioRubro auxNeg = new CapaNegocio.NegocioRubro();
+            DataSet mydata = auxNeg.consultaRubro();
+
+            NegocioReporteria negRep = new NegocioReporteria();
+            negRep.GenerarReporte(mydata, "RUBROS");
+
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row = this.dataGridView1.CurrentRow;
-            if (e.ColumnIndex == 1)
-            {
-                if((String)row.Cells[10].Value == "Activo")
-                {
-                    String rut = (String)row.Cells[6].Value;
-                    NegocioCliente nc = new NegocioCliente();
-                    nc.suspenderCliente(rut);
-                    MessageBox.Show("Cliente suspendido");
-                    btnRefresh.PerformClick();
-                }
-                else
-                {
-                    MessageBox.Show("Cliente ya se encuentra suspendido");
-                }
-            }
-            if (e.ColumnIndex == 0)
-            {
-                //MessageBox.Show("Modificar");
-                ActualizarCliente ac = new ActualizarCliente();
-
-                ac.txtCorreoAC.Text = (String)row.Cells[4].Value;
-                ac.txtClaveAC.Text = (String)row.Cells[5].Value;
-                ac.txtRutAC.Text = (String)row.Cells[6].Value;
-                ac.txtDireccionAC.Text = (String)row.Cells[7].Value;
-                ac.txtTelefonoAC.Text = (String)row.Cells[8].Value;
-                ac.txtRSocialAC.Text = (String)row.Cells[9].Value;
-                ac.txtEstadoAC.Text = (String)row.Cells[10].Value;
-
-                ac.Show();
-            }
-            if (e.ColumnIndex == 2)
-            {
-                if ((String)row.Cells[10].Value == "Suspendido")
-                {
-                    String rut = (String)row.Cells[6].Value;
-                    NegocioCliente nc = new NegocioCliente();
-                    nc.activarCliente(rut);
-                    MessageBox.Show("Cliente activo");
-                    btnRefresh.PerformClick();
-                }
-                else
-                {
-                    MessageBox.Show("Cliente ya se encuentra activo");
-                }
-            }
-            if (e.ColumnIndex == 3)
-            {
-                //MessageBox.Show("Proyectos");
-                ListarProyectos lp = new ListarProyectos();
-                lp.txtAux.Text = (String)row.Cells[9].Value;
-                lp.Show();
-                //ac.Show();
-            }
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
-            this.dataGridView1.DataSource = auxNeg.consultaCliente();
-            this.dataGridView1.DataMember = "usuarios";
+            PantallaFactura ma = new PantallaFactura();
+            ma.ShowDialog();
         }
     }
 }
