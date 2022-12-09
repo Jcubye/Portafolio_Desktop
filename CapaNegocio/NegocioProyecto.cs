@@ -73,7 +73,14 @@ namespace CapaNegocio
             DataTable dt = new DataTable();
             dt = this.Conex.DbDataSet.Tables[0];
 
-            return (String)dt.Rows[0]["descripcion"];
+            if (dt.Rows.Count > 0)
+            {
+                return (String)dt.Rows[0]["descripcion"];
+            }
+            else
+            {
+                return "";
+            }
         }
     }
 }

@@ -16,6 +16,7 @@ namespace CapaGUI
         public ListarProyectos()
         {
             InitializeComponent();
+            
         }
 
         private void ListarProyectos_Load(object sender, EventArgs e)
@@ -24,6 +25,8 @@ namespace CapaGUI
             this.cmbProyec.DataSource = auxNegocio.consultaProyecto().Tables[0];
             this.cmbProyec.DisplayMember = "nombre";
             this.cmbProyec.DropDownStyle = ComboBoxStyle.DropDownList;
+            NegocioProyecto auxNegocio2 = new NegocioProyecto();
+            this.txtDescProyecto.Text = auxNegocio2.obtenerDescProyecto(this.cmbProyec.Text);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -36,7 +39,6 @@ namespace CapaGUI
         {
             NegocioProyecto auxNegocio = new NegocioProyecto();
             this.txtDescProyecto.Text = auxNegocio.obtenerDescProyecto(this.cmbProyec.Text);
-
             NegocioTrabajadores auxNeg = new NegocioTrabajadores();
             this.gridViewTrabajadores.DataSource = auxNeg.consultaTrabajadores(this.cmbProyec.Text);
             this.gridViewTrabajadores.DataMember = "Trabajadores";
