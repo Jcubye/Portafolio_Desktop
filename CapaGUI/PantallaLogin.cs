@@ -33,7 +33,10 @@ namespace CapaGUI
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            NegocioReporteria negRep = new NegocioReporteria();
+            DataSet mydata = negRep.consultaFacturasPendientes();
+            negRep.GenerarReporte(mydata,"DEUDORES");
+            //Application.Exit();
         }
 
         private void btnProfesionales_Click(object sender, EventArgs e)

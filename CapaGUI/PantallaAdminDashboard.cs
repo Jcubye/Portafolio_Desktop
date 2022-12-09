@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,10 +66,7 @@ namespace CapaGUI
 
         private void PantallaAdminDashboard_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'prueba_portafolioDataSet1.profesional' Puede moverla o quitarla según sea necesario.
-            this.profesionalTableAdapter1.Fill(this.prueba_portafolioDataSet1.profesional);
-
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -125,16 +123,40 @@ namespace CapaGUI
             mc.ShowDialog();
         }
 
+        private void btnDeudores_Click(object sender, EventArgs e)
+        {
+            NegocioReporteria negRep = new NegocioReporteria();
+            DataSet mydata = negRep.consultaFacturasPendientes();
+            negRep.GenerarReporte(mydata,"DEUDORES");
+        }
+
+        private void btnReportClient_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
+            DataSet mydata = auxNeg.consultaCliente();
+
+            NegocioReporteria negRep = new NegocioReporteria();
+            negRep.GenerarReporte(mydata,"CLIENTES");
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
+            CapaNegocio.NegocioCliente auxNeg = new CapaNegocio.NegocioCliente();
+            DataSet mydata = auxNeg.consultaCliente();
 
-            MantenedorProfesional mp = new MantenedorProfesional();
-            mp.ShowDialog();
+            NegocioReporteria negRep = new NegocioReporteria();
+            negRep.GenerarReporte(mydata, "CLIENTES ACTIVOS");
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            CapaNegocio.NegocioRubro auxNeg = new CapaNegocio.NegocioRubro();
+            DataSet mydata = auxNeg.consultaRubro();
+
+            NegocioReporteria negRep = new NegocioReporteria();
+            negRep.GenerarReporte(mydata, "RUBROS");
+
         }
     }
 }
