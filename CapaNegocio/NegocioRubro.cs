@@ -55,18 +55,5 @@ namespace CapaNegocio
 
             return auxRubro.Descripcion;
         }
-
-        public int ObtenerIdRubro(String nombreRubro)//preba
-        {
-            this.configurarConexion();
-            this.Conex.NombreTabla = "rubro";
-            this.Conex.CadenaSQL = "SELECT id FROM prueba_portafolio.dbo.rubro WHERE nombre ='" + nombreRubro + "';";
-            this.Conex.EsSelect = true;
-            this.Conex.conectar();
-            DataTable dt = new DataTable();
-            dt = this.Conex.DbDataSet.Tables[0];
-            
-            return (int)dt.Rows[0]["id"];
-        }
     }
 }
