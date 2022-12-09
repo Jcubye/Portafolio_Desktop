@@ -48,59 +48,68 @@ C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\Cap
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.exe
 C:\Users\Braulio F\Documents\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaGUI.exe
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaGUI.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaModelo.dll
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaNegocio.dll
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.dll
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaConexión.dll
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaModelo.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaNegocio.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.xml
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaConexión.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.AssemblyReference.cache
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.SuggestedBindingRedirects.cache
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.MantenedorAdministradores.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.ListarClientes.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.MantenedorClientes.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaAdminDashboard.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaContrato.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaLogin.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaProfesionalDashboard.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.ProfesionalesDataView.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.Properties.Resources.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.GenerateResource.cache
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.CoreCompileInputs.cache
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.exe
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.pdb
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.MantenedorProfesional.resources
-C:\Users\CamiloSilva\Downloads\Portafolio_Desktop-master (2)\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaGUI.exe.config
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaGUI.exe.config
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaGUI.exe
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaGUI.pdb
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaModelo.dll
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaNegocio.dll
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.dll
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaConexión.dll
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaModelo.pdb
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaNegocio.pdb
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\Newtonsoft.Json.xml
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\bin\Debug\CapaConexión.pdb
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.AssemblyReference.cache
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.SuggestedBindingRedirects.cache
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.MantenedorAdministradores.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.ListarClientes.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.MantenedorClientes.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.MantenedorProfesional.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaAdminDashboard.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaContrato.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaLogin.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.PantallaProfesionalDashboard.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.ProfesionalesDataView.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.Properties.Resources.resources
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.GenerateResource.cache
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.CoreCompileInputs.cache
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.exe
-C:\Users\CamiloSilva\Downloads\DEFINITIVO\Portafolio_Desktop-master\CapaGUI\obj\Debug\CapaGUI.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaGUI.exe
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaGUI.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaModelo.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaNegocio.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaConexión.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaModelo.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaNegocio.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaConexión.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.AssemblyReference.cache
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.MantenedorAdministradores.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.ListarClientes.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.MantenedorClientes.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaAdminDashboard.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaContrato.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaLogin.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.PantallaProfesionalDashboard.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.ProfesionalesDataView.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.Properties.Resources.resources
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.GenerateResource.cache
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.CoreCompileInputs.cache
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.exe
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\obj\Debug\CapaGUI.pdb
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaGUI.exe.config
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.kernel.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.layout.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.commons.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.io.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.ValueTuple.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Memory.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Buffers.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaNegocio.dll.config
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\CapaConexión.dll.config
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.kernel.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.layout.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.commons.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\itext.io.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.ValueTuple.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Memory.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Buffers.xml
+C:\Users\Braulio F\Downloads\Portafolio_Desktop-bfernandez\CapaGUI\bin\Debug\System.Numerics.Vectors.xml
