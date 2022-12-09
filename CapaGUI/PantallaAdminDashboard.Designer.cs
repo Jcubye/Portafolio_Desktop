@@ -29,7 +29,6 @@ namespace CapaGUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -48,32 +47,20 @@ namespace CapaGUI
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnDeudores = new System.Windows.Forms.Button();
+            this.btnReportClient = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.profesionalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.prueba_portafolio_profesionalDataSet = new CapaGUI.prueba_portafolio_profesionalDataSet();
-            this.profesionalTableAdapter = new CapaGUI.prueba_portafolio_profesionalDataSetTableAdapters.profesionalTableAdapter();
-            this.prueba_portafolioDataSet1 = new CapaGUI.prueba_portafolioDataSet1();
-            this.profesionalBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.profesionalTableAdapter1 = new CapaGUI.prueba_portafolioDataSet1TableAdapters.profesionalTableAdapter();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContratos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profesionalBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_portafolio_profesionalDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_portafolioDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profesionalBindingSource1)).BeginInit();
+            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -88,23 +75,21 @@ namespace CapaGUI
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(1, 4);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Location = new System.Drawing.Point(1, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.ShowToolTips = true;
-            this.tabControl1.Size = new System.Drawing.Size(1565, 750);
+            this.tabControl1.Size = new System.Drawing.Size(1174, 609);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tabPage1
             // 
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1166, 580);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dashboard";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -116,11 +101,10 @@ namespace CapaGUI
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1166, 580);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Clientes";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -128,10 +112,9 @@ namespace CapaGUI
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(1361, 615);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Location = new System.Drawing.Point(1021, 500);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(147, 39);
+            this.btnSalir.Size = new System.Drawing.Size(110, 32);
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -140,10 +123,9 @@ namespace CapaGUI
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(1137, 615);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(853, 500);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(147, 39);
+            this.btnAgregar.Size = new System.Drawing.Size(110, 32);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -152,35 +134,27 @@ namespace CapaGUI
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 140);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 114);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1471, 443);
+            this.dataGridView1.Size = new System.Drawing.Size(1103, 360);
             this.dataGridView1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(693, 50);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(520, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
+            this.label1.Size = new System.Drawing.Size(95, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "CLIENTES";
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1166, 580);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Profesionales";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -191,11 +165,10 @@ namespace CapaGUI
             this.tabPage4.Controls.Add(this.button2);
             this.tabPage4.Controls.Add(this.dataGridContratos);
             this.tabPage4.Controls.Add(this.label2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 29);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage4.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1166, 580);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Contratos";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -203,10 +176,9 @@ namespace CapaGUI
             // btnSalir2
             // 
             this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir2.Location = new System.Drawing.Point(1347, 625);
-            this.btnSalir2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir2.Location = new System.Drawing.Point(1010, 508);
             this.btnSalir2.Name = "btnSalir2";
-            this.btnSalir2.Size = new System.Drawing.Size(147, 39);
+            this.btnSalir2.Size = new System.Drawing.Size(110, 32);
             this.btnSalir2.TabIndex = 5;
             this.btnSalir2.Text = "Salir";
             this.btnSalir2.UseVisualStyleBackColor = true;
@@ -215,10 +187,9 @@ namespace CapaGUI
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1123, 625);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(842, 508);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 39);
+            this.button2.Size = new System.Drawing.Size(110, 32);
             this.button2.TabIndex = 4;
             this.button2.Text = "Agregar";
             this.button2.UseVisualStyleBackColor = true;
@@ -227,203 +198,166 @@ namespace CapaGUI
             // dataGridContratos
             // 
             this.dataGridContratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridContratos.Location = new System.Drawing.Point(43, 135);
-            this.dataGridContratos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridContratos.Location = new System.Drawing.Point(32, 110);
             this.dataGridContratos.Name = "dataGridContratos";
-            this.dataGridContratos.RowHeadersWidth = 51;
-            this.dataGridContratos.Size = new System.Drawing.Size(1471, 443);
+            this.dataGridContratos.Size = new System.Drawing.Size(1103, 360);
             this.dataGridContratos.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(639, 59);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(479, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 25);
+            this.label2.Size = new System.Drawing.Size(116, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "CONTRATOS";
             // 
             // tabPage5
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 29);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage5.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1166, 580);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Actividades";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage6
             // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 29);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage6.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1166, 580);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Finanzas";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tabPage7
             // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 29);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage7.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1166, 580);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Urgencia";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // tabPage8
             // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 29);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage8.Controls.Add(this.button3);
+            this.tabPage8.Controls.Add(this.button1);
+            this.tabPage8.Controls.Add(this.label6);
+            this.tabPage8.Controls.Add(this.label5);
+            this.tabPage8.Controls.Add(this.btnReportClient);
+            this.tabPage8.Controls.Add(this.btnDeudores);
+            this.tabPage8.Controls.Add(this.label4);
+            this.tabPage8.Controls.Add(this.label3);
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage8.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1166, 580);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Reportes";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tabPage9
             // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 29);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage9.Size = new System.Drawing.Size(1557, 717);
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1166, 580);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Salir";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nombreDataGridViewTextBoxColumn,
-            this.apellidopDataGridViewTextBoxColumn,
-            this.apellidomDataGridViewTextBoxColumn,
-            this.rolDataGridViewTextBoxColumn,
-            this.estadoDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.profesionalBindingSource1;
-            this.dataGridView2.Location = new System.Drawing.Point(40, 135);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(1498, 443);
-            this.dataGridView2.TabIndex = 3;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(646, 72);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(269, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "PROFESIONALES";
+            this.label3.Size = new System.Drawing.Size(172, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Reporte de deudores :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(269, 162);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(217, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Reporte de clientes nuevos :";
+            // 
+            // btnDeudores
+            // 
+            this.btnDeudores.Location = new System.Drawing.Point(503, 98);
+            this.btnDeudores.Name = "btnDeudores";
+            this.btnDeudores.Size = new System.Drawing.Size(87, 23);
+            this.btnDeudores.TabIndex = 3;
+            this.btnDeudores.Text = "Guardar ";
+            this.btnDeudores.UseVisualStyleBackColor = true;
+            this.btnDeudores.Click += new System.EventHandler(this.btnDeudores_Click);
+            // 
+            // btnReportClient
+            // 
+            this.btnReportClient.Location = new System.Drawing.Point(503, 162);
+            this.btnReportClient.Name = "btnReportClient";
+            this.btnReportClient.Size = new System.Drawing.Size(87, 23);
+            this.btnReportClient.TabIndex = 4;
+            this.btnReportClient.Text = "Guardar ";
+            this.btnReportClient.UseVisualStyleBackColor = true;
+            this.btnReportClient.Click += new System.EventHandler(this.btnReportClient_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(269, 229);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(229, 17);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Reporte de clientes inactivos :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(269, 298);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 17);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Rubros :";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1127, 644);
+            this.button1.Location = new System.Drawing.Point(504, 229);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 43);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Agregar";
+            this.button1.Size = new System.Drawing.Size(87, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Guardar ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1326, 644);
+            this.button3.Location = new System.Drawing.Point(503, 298);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 43);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Salir";
+            this.button3.Size = new System.Drawing.Size(87, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Guardar ";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // profesionalBindingSource
-            // 
-            this.profesionalBindingSource.DataMember = "profesional";
-            this.profesionalBindingSource.DataSource = this.prueba_portafolio_profesionalDataSet;
-            // 
-            // prueba_portafolio_profesionalDataSet
-            // 
-            this.prueba_portafolio_profesionalDataSet.DataSetName = "prueba_portafolio_profesionalDataSet";
-            this.prueba_portafolio_profesionalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // profesionalTableAdapter
-            // 
-            this.profesionalTableAdapter.ClearBeforeFill = true;
-            // 
-            // prueba_portafolioDataSet1
-            // 
-            this.prueba_portafolioDataSet1.DataSetName = "prueba_portafolioDataSet1";
-            this.prueba_portafolioDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // profesionalBindingSource1
-            // 
-            this.profesionalBindingSource1.DataMember = "profesional";
-            this.profesionalBindingSource1.DataSource = this.prueba_portafolioDataSet1;
-            // 
-            // profesionalTableAdapter1
-            // 
-            this.profesionalTableAdapter1.ClearBeforeFill = true;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // apellidopDataGridViewTextBoxColumn
-            // 
-            this.apellidopDataGridViewTextBoxColumn.DataPropertyName = "apellido_p";
-            this.apellidopDataGridViewTextBoxColumn.HeaderText = "apellido_p";
-            this.apellidopDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.apellidopDataGridViewTextBoxColumn.Name = "apellidopDataGridViewTextBoxColumn";
-            this.apellidopDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // apellidomDataGridViewTextBoxColumn
-            // 
-            this.apellidomDataGridViewTextBoxColumn.DataPropertyName = "apellido_m";
-            this.apellidomDataGridViewTextBoxColumn.HeaderText = "apellido_m";
-            this.apellidomDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.apellidomDataGridViewTextBoxColumn.Name = "apellidomDataGridViewTextBoxColumn";
-            this.apellidomDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // rolDataGridViewTextBoxColumn
-            // 
-            this.rolDataGridViewTextBoxColumn.DataPropertyName = "rol";
-            this.rolDataGridViewTextBoxColumn.HeaderText = "rol";
-            this.rolDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.rolDataGridViewTextBoxColumn.Name = "rolDataGridViewTextBoxColumn";
-            this.rolDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // estadoDataGridViewTextBoxColumn
-            // 
-            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
-            this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
-            this.estadoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
-            this.estadoDataGridViewTextBoxColumn.Width = 125;
-            // 
             // PantallaAdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1568, 751);
+            this.ClientSize = new System.Drawing.Size(1176, 610);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "PantallaAdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -433,16 +367,11 @@ namespace CapaGUI
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridContratos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profesionalBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_portafolio_profesionalDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_portafolioDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profesionalBindingSource1)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -467,20 +396,13 @@ namespace CapaGUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSalir2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDeudores;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnReportClient;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private prueba_portafolio_profesionalDataSet prueba_portafolio_profesionalDataSet;
-        private System.Windows.Forms.BindingSource profesionalBindingSource;
-        private prueba_portafolio_profesionalDataSetTableAdapters.profesionalTableAdapter profesionalTableAdapter;
-        private prueba_portafolioDataSet1 prueba_portafolioDataSet1;
-        private System.Windows.Forms.BindingSource profesionalBindingSource1;
-        private prueba_portafolioDataSet1TableAdapters.profesionalTableAdapter profesionalTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidopDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidomDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rolDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
